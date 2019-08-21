@@ -1,0 +1,16 @@
+PODS:
+  - ARVideoKit (1.3)
+
+DEPENDENCIES:
+  - ARVideoKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ARVideoKit
+
+SPEC CHECKSUMS:
+  ARVideoKit: 9bd6fd31662b8b4c3966797e0f596f4d87948475
+
+PODFILE CHECKSUM: 52c6d3ba9c69a0e1fad34dbd4c862014ac39416e
+
+COCOAPODS: 1.6.1

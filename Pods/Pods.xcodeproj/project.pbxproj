@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E54FCEC33C1721AF4136E5A531C54A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		0707B973477D81DA276897662379C446 /* CGImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A67245417DA52236E54865354FB62 /* CGImage+Resize.swift */; };
+		0DA05F589ABA8F00784B246332BF2B16 /* video.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D21D66A3DFD7595CB1566F125BFCF6FE /* video.scnassets */; };
+		1034F0E5E903C929EE48F01228B3612D /* RenderAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAAA0B2EA490785203D8C2B6756F7FC /* RenderAR.swift */; };
+		1313196D3B56D75EDCAD457C9C2B3997 /* RecordARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FC774D5E862A60F87C6D76EF9A64BF /* RecordARDelegate.swift */; };
+		13D7A04A3A45B18AAC1011D1A8DA3624 /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE5C97C004FB119D435C7E4794B13 /* JPEG.swift */; };
+		185608193FE76FE74E424C80D5963704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1CD36E7DAA36CE195C3AA7D1DC59FB6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		33788188B4BE00B818D840EE13A8C530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		475A89032A8763D8E2ADD6B21783FA68 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D38B14C91D9E1C3D15648C38EBDD55E /* Pods-PortraitToRealityUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */; };
+		64CAD969F31ABF18EF54B79E660646F2 /* RenderARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B415896440A2648A4AAE9116B8DD407 /* RenderARDelegate.swift */; };
+		712E7B0D1B22788AE10FD2512DD570B3 /* ARVideoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FC60CEFAD905BE48F0ECD7A32FFDC /* ARVideoOptions.swift */; };
+		72EF598593CDF29452D8B32714908CE9 /* RecordAR+PhotoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF379F868C81007443EF4B7B7FD37BE /* RecordAR+PhotoRender.swift */; };
+		7466B4802D68962D1F967A669527D1EF /* Generate+LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08434DACFC815F02BC6E76690B169CD1 /* Generate+LivePhoto.swift */; };
+		75BB033DA0BC5A8ADB50FE4C8C0E716A /* Generate+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6BA4C7A321B0D7990755CF30F52FF /* Generate+GIF.swift */; };
+		7BB36648630833A6D3384593CC4459C9 /* ARVideoKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BBCB1E565D74479309F9DB23F0C514 /* ARVideoKit-dummy.m */; };
+		8053DBF940CDB20ECE5B27EA790B0CF0 /* ARVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FE6207A63C1BD703E476E496CCC2AA /* ARVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8158400300FB97D3C606B2C195538F8D /* ViewAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087230A8E982E212896E604F8DFB1C8E /* ViewAR.swift */; };
+		93F17B9BFC168DAA500021F40C4BE08C /* QuickTimeMov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5C579E3AD5A7FB62B1464CB090 /* QuickTimeMov.swift */; };
+		9ED542F756B9CCBB3E43E712385CDDF2 /* Pods-PortraitToReality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACB658B6D9490E0FDDC04E0327064A83 /* Pods-PortraitToRealityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */; };
+		ADA094D3BFDF8E0A57AD854D27AEE3A0 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE50633D596FBABE96A7A8EE7D9E5CD /* ARView.swift */; };
+		ADFD6E3854DA0C5738074605AE6D99E7 /* UIView+isType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CAC53672E75A77EE06C4878CB1675 /* UIView+isType.swift */; };
+		BA6C585E59F8A2C8C24DE47C2254BAE7 /* Pods-PortraitToRealityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF5A5A25CE83FAD83DD3E4624889DE11 /* ARInputViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B9C3C0BEAE5C20BDF1F7404341C8A /* ARInputViewOptions.swift */; };
+		D4603C35CBA5036FBD4E08AAEDAC2BC4 /* UIViewController+hasType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01726EC445F2B4E15F47A0333A1F4B81 /* UIViewController+hasType.swift */; };
+		D9F31D313E39AD03850BA27FF69DE2B2 /* UIImage+VideoBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39F8ECDDFA13F0E885A44954DC731E /* UIImage+VideoBuffer.swift */; };
+		E029E86F9A49C498BB987E57149EA774 /* WritAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C232F3E14FC8F8B4576FA020407508 /* WritAR.swift */; };
+		E4F2B0C269DDDFB304CE3E53BA7E26FA /* RecordAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575E42283E9944F4BFDC67C74745DCD /* RecordAR.swift */; };
+		E64C8C42EA71208CA24E06164CA26E07 /* Pods-PortraitToReality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */; };
+		E80F072960BBB98D5C1C0A355DF23CC4 /* ARVideoKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF315CA95E2C6B55DEFF06A6D340822 /* ARVideoKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC9CE20B1EE47E89D7EB1BE2643B3A56 /* PHLivePhotoPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9EB791E037C9A68F8821AD8480E988 /* PHLivePhotoPlus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E99895E9B82642725F68E28C98C4857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D73C00F957192790EB7CA81FC84A3F26;
+			remoteInfo = ARVideoKit;
+		};
+		9F06FA22DD013972FD0EFB4A520A4173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72923DBEAD9E4CA3ED698AE66BE16DC1;
+			remoteInfo = "Pods-PortraitToReality";
+		};
+		D47ABABB71F9536333C59E1491CD4FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72923DBEAD9E4CA3ED698AE66BE16DC1;
+			remoteInfo = "Pods-PortraitToReality";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01726EC445F2B4E15F47A0333A1F4B81 /* UIViewController+hasType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+hasType.swift"; path = "ARVideoKit/Extensions/UIViewController+hasType.swift"; sourceTree = "<group>"; };
+		08434DACFC815F02BC6E76690B169CD1 /* Generate+LivePhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+LivePhoto.swift"; path = "ARVideoKit/Rendering/Live Photo/Generate+LivePhoto.swift"; sourceTree = "<group>"; };
+		087230A8E982E212896E604F8DFB1C8E /* ViewAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAR.swift; path = ARVideoKit/Sources/ViewAR.swift; sourceTree = "<group>"; };
+		088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0AAAA0B2EA490785203D8C2B6756F7FC /* RenderAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderAR.swift; path = ARVideoKit/Rendering/RenderAR.swift; sourceTree = "<group>"; };
+		121A308ECC53A3D1A3EEBD3ED42E437E /* Pods-PortraitToRealityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		123A51F602FC261F3BE3AB074DCBF584 /* Pods_PortraitToReality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToReality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3CAC53672E75A77EE06C4878CB1675 /* UIView+isType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+isType.swift"; path = "ARVideoKit/Extensions/UIView+isType.swift"; sourceTree = "<group>"; };
+		1DA8CD1CEC74064CA10A6E0A06361DCC /* Pods-PortraitToReality-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-Info.plist"; sourceTree = "<group>"; };
+		2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityUITests-dummy.m"; sourceTree = "<group>"; };
+		23757001D69886D1303A602B393F88E2 /* Pods-PortraitToRealityTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-Info.plist"; sourceTree = "<group>"; };
+		27252C48242C610EB3AF5CB135F5E3E7 /* Pods-PortraitToReality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PortraitToReality-frameworks.sh"; sourceTree = "<group>"; };
+		29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToReality-dummy.m"; sourceTree = "<group>"; };
+		2F1FC60CEFAD905BE48F0ECD7A32FFDC /* ARVideoOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARVideoOptions.swift; path = ARVideoKit/Enumerations/ARVideoOptions.swift; sourceTree = "<group>"; };
+		3B6E2AC7AA5609E5CF1CBB600CFA7D56 /* ARVideoKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-prefix.pch"; sourceTree = "<group>"; };
+		3C60F8149BE75102DE44CA9514CD5BA8 /* ARVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityTests-umbrella.h"; sourceTree = "<group>"; };
+		4A9EB791E037C9A68F8821AD8480E988 /* PHLivePhotoPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHLivePhotoPlus.swift; path = "ARVideoKit/Rendering/Live Photo/PHLivePhotoPlus.swift"; sourceTree = "<group>"; };
+		4B415896440A2648A4AAE9116B8DD407 /* RenderARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderARDelegate.swift; path = ARVideoKit/Protocols/RenderARDelegate.swift; sourceTree = "<group>"; };
+		4E832A2DDCDE109E2E71683C07BA4194 /* Pods_PortraitToRealityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF379F868C81007443EF4B7B7FD37BE /* RecordAR+PhotoRender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RecordAR+PhotoRender.swift"; path = "ARVideoKit/Extensions/RecordAR+PhotoRender.swift"; sourceTree = "<group>"; };
+		502A67245417DA52236E54865354FB62 /* CGImage+Resize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Resize.swift"; path = "ARVideoKit/Extensions/CGImage+Resize.swift"; sourceTree = "<group>"; };
+		532C6B19CD903DFA674797D982AAC6CA /* Pods-PortraitToRealityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityTests.modulemap"; sourceTree = "<group>"; };
+		548CCFBEBB88BEA87B71DFAE28C0DF62 /* Pods_PortraitToRealityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D123EB9F312E2D0A2E79A5547E6CA53 /* Pods-PortraitToRealityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C19D5A146F48CEFAE6EFB8B178607E5 /* Pods-PortraitToRealityUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-Info.plist"; sourceTree = "<group>"; };
+		6C39F8ECDDFA13F0E885A44954DC731E /* UIImage+VideoBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+VideoBuffer.swift"; path = "ARVideoKit/Extensions/UIImage+VideoBuffer.swift"; sourceTree = "<group>"; };
+		71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.release.xcconfig"; sourceTree = "<group>"; };
+		71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToReality-umbrella.h"; sourceTree = "<group>"; };
+		73BBCB1E565D74479309F9DB23F0C514 /* ARVideoKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARVideoKit-dummy.m"; sourceTree = "<group>"; };
+		7AA8F00D2A89AFB754CAD4C10C1188EA /* ARVideoKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARVideoKit-Info.plist"; sourceTree = "<group>"; };
+		7AB34AFBF77548E30ADDF8393909656A /* Pods-PortraitToRealityUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F2DE5C97C004FB119D435C7E4794B13 /* JPEG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JPEG.swift; path = "ARVideoKit/Rendering/Live Photo/JPEG.swift"; sourceTree = "<group>"; };
+		87C232F3E14FC8F8B4576FA020407508 /* WritAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WritAR.swift; path = ARVideoKit/Rendering/Writer/WritAR.swift; sourceTree = "<group>"; };
+		8DF315CA95E2C6B55DEFF06A6D340822 /* ARVideoKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-umbrella.h"; sourceTree = "<group>"; };
+		90FC774D5E862A60F87C6D76EF9A64BF /* RecordARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordARDelegate.swift; path = ARVideoKit/Protocols/RecordARDelegate.swift; sourceTree = "<group>"; };
+		972EBC5C579E3AD5A7FB62B1464CB090 /* QuickTimeMov.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTimeMov.swift; path = "ARVideoKit/Rendering/Live Photo/QuickTimeMov.swift"; sourceTree = "<group>"; };
+		99FE6207A63C1BD703E476E496CCC2AA /* ARVideoKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARVideoKit.h; path = ARVideoKit/ARVideoKit.h; sourceTree = "<group>"; };
+		9BFBA3E3C13C853287A799D59FF75090 /* Pods-PortraitToReality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToReality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.debug.xcconfig"; sourceTree = "<group>"; };
+		9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4ACA2A6486C9A29407D456B3A333076 /* Pods-PortraitToReality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-acknowledgements.plist"; sourceTree = "<group>"; };
+		B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityUITests-umbrella.h"; sourceTree = "<group>"; };
+		C575E42283E9944F4BFDC67C74745DCD /* RecordAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordAR.swift; path = ARVideoKit/Sources/RecordAR.swift; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF18E18263F00825D218DE926F0B6A6A /* ARVideoKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARVideoKit.modulemap; sourceTree = "<group>"; };
+		D21D66A3DFD7595CB1566F125BFCF6FE /* video.scnassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.scnassets; name = video.scnassets; path = ARVideoKit/Assets/video.scnassets; sourceTree = "<group>"; };
+		E1A639C46E9B2AD6C454A17DD2509FC4 /* Pods-PortraitToRealityUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E665CA1EFE4FDA64CFC6505CA673FF89 /* Pods-PortraitToReality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToReality.modulemap"; sourceTree = "<group>"; };
+		E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.release.xcconfig"; sourceTree = "<group>"; };
+		EA8B9C3C0BEAE5C20BDF1F7404341C8A /* ARInputViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARInputViewOptions.swift; path = ARVideoKit/Enumerations/ARInputViewOptions.swift; sourceTree = "<group>"; };
+		EB2C4FF9B2D33CF65A13CB1D3F3B40E9 /* ARVideoKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARVideoKit.xcconfig; sourceTree = "<group>"; };
+		EBE50633D596FBABE96A7A8EE7D9E5CD /* ARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARView.swift; path = ARVideoKit/Sources/ARView.swift; sourceTree = "<group>"; };
+		ECE6BA4C7A321B0D7990755CF30F52FF /* Generate+GIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+GIF.swift"; path = "ARVideoKit/Rendering/GIF/Generate+GIF.swift"; sourceTree = "<group>"; };
+		FA6F98B34EBF49B21BF5C80E1CFE7CE6 /* Pods-PortraitToRealityUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityUITests.modulemap"; sourceTree = "<group>"; };
+		FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081283A743AE753883BB94D1062C3DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33788188B4BE00B818D840EE13A8C530 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E9BC98FDDB7538D58789FF76952B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185608193FE76FE74E424C80D5963704 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71183D3597B12853855AF9F3E20AF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E54FCEC33C1721AF4136E5A531C54A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A13B2918D0DAE4FF8DB2BF290D5E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD36E7DAA36CE195C3AA7D1DC59FB6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5E15F9885B8C969776298609681BF9 /* Pods-PortraitToReality */ = {
+			isa = PBXGroup;
+			children = (
+				E665CA1EFE4FDA64CFC6505CA673FF89 /* Pods-PortraitToReality.modulemap */,
+				9BFBA3E3C13C853287A799D59FF75090 /* Pods-PortraitToReality-acknowledgements.markdown */,
+				A4ACA2A6486C9A29407D456B3A333076 /* Pods-PortraitToReality-acknowledgements.plist */,
+				29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */,
+				27252C48242C610EB3AF5CB135F5E3E7 /* Pods-PortraitToReality-frameworks.sh */,
+				1DA8CD1CEC74064CA10A6E0A06361DCC /* Pods-PortraitToReality-Info.plist */,
+				71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */,
+				9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */,
+				E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */,
+			);
+			name = "Pods-PortraitToReality";
+			path = "Target Support Files/Pods-PortraitToReality";
+			sourceTree = "<group>";
+		};
+		4F1AD21EB5D4369EA0DC68C744CD7C39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B5E15F9885B8C969776298609681BF9 /* Pods-PortraitToReality */,
+				533ECDA5D00F052E7B5E92DCB1F2FC5B /* Pods-PortraitToRealityTests */,
+				DE5A4C4B93F0BFB178668D257BEFAAF8 /* Pods-PortraitToRealityUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4F3EA427ACE6281E268AAE813E2A136A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D21D66A3DFD7595CB1566F125BFCF6FE /* video.scnassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		533ECDA5D00F052E7B5E92DCB1F2FC5B /* Pods-PortraitToRealityTests */ = {
+			isa = PBXGroup;
+			children = (
+				532C6B19CD903DFA674797D982AAC6CA /* Pods-PortraitToRealityTests.modulemap */,
+				5D123EB9F312E2D0A2E79A5547E6CA53 /* Pods-PortraitToRealityTests-acknowledgements.markdown */,
+				121A308ECC53A3D1A3EEBD3ED42E437E /* Pods-PortraitToRealityTests-acknowledgements.plist */,
+				FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */,
+				23757001D69886D1303A602B393F88E2 /* Pods-PortraitToRealityTests-Info.plist */,
+				4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */,
+				9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */,
+				71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */,
+			);
+			name = "Pods-PortraitToRealityTests";
+			path = "Target Support Files/Pods-PortraitToRealityTests";
+			sourceTree = "<group>";
+		};
+		9B04861A19BE645DFD0218952D37FE94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C60F8149BE75102DE44CA9514CD5BA8 /* ARVideoKit.framework */,
+				123A51F602FC261F3BE3AB074DCBF584 /* Pods_PortraitToReality.framework */,
+				4E832A2DDCDE109E2E71683C07BA4194 /* Pods_PortraitToRealityTests.framework */,
+				548CCFBEBB88BEA87B71DFAE28C0DF62 /* Pods_PortraitToRealityUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BCF18105588AA579F1B7403D10BC6279 /* ARVideoKit */ = {
+			isa = PBXGroup;
+			children = (
+				EA8B9C3C0BEAE5C20BDF1F7404341C8A /* ARInputViewOptions.swift */,
+				99FE6207A63C1BD703E476E496CCC2AA /* ARVideoKit.h */,
+				2F1FC60CEFAD905BE48F0ECD7A32FFDC /* ARVideoOptions.swift */,
+				EBE50633D596FBABE96A7A8EE7D9E5CD /* ARView.swift */,
+				502A67245417DA52236E54865354FB62 /* CGImage+Resize.swift */,
+				ECE6BA4C7A321B0D7990755CF30F52FF /* Generate+GIF.swift */,
+				08434DACFC815F02BC6E76690B169CD1 /* Generate+LivePhoto.swift */,
+				7F2DE5C97C004FB119D435C7E4794B13 /* JPEG.swift */,
+				4A9EB791E037C9A68F8821AD8480E988 /* PHLivePhotoPlus.swift */,
+				972EBC5C579E3AD5A7FB62B1464CB090 /* QuickTimeMov.swift */,
+				C575E42283E9944F4BFDC67C74745DCD /* RecordAR.swift */,
+				4EF379F868C81007443EF4B7B7FD37BE /* RecordAR+PhotoRender.swift */,
+				90FC774D5E862A60F87C6D76EF9A64BF /* RecordARDelegate.swift */,
+				0AAAA0B2EA490785203D8C2B6756F7FC /* RenderAR.swift */,
+				4B415896440A2648A4AAE9116B8DD407 /* RenderARDelegate.swift */,
+				6C39F8ECDDFA13F0E885A44954DC731E /* UIImage+VideoBuffer.swift */,
+				1B3CAC53672E75A77EE06C4878CB1675 /* UIView+isType.swift */,
+				01726EC445F2B4E15F47A0333A1F4B81 /* UIViewController+hasType.swift */,
+				087230A8E982E212896E604F8DFB1C8E /* ViewAR.swift */,
+				87C232F3E14FC8F8B4576FA020407508 /* WritAR.swift */,
+				4F3EA427ACE6281E268AAE813E2A136A /* Resources */,
+				DE897D282F648ECA3F997FE7027A62E3 /* Support Files */,
+			);
+			path = ARVideoKit;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D18F4BEDF5AB34750E9B1547C2B9B2E5 /* Pods */,
+				9B04861A19BE645DFD0218952D37FE94 /* Products */,
+				4F1AD21EB5D4369EA0DC68C744CD7C39 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D18F4BEDF5AB34750E9B1547C2B9B2E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCF18105588AA579F1B7403D10BC6279 /* ARVideoKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE5A4C4B93F0BFB178668D257BEFAAF8 /* Pods-PortraitToRealityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F98B34EBF49B21BF5C80E1CFE7CE6 /* Pods-PortraitToRealityUITests.modulemap */,
+				7AB34AFBF77548E30ADDF8393909656A /* Pods-PortraitToRealityUITests-acknowledgements.markdown */,
+				E1A639C46E9B2AD6C454A17DD2509FC4 /* Pods-PortraitToRealityUITests-acknowledgements.plist */,
+				2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */,
+				6C19D5A146F48CEFAE6EFB8B178607E5 /* Pods-PortraitToRealityUITests-Info.plist */,
+				B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */,
+				55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */,
+				088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */,
+			);
+			name = "Pods-PortraitToRealityUITests";
+			path = "Target Support Files/Pods-PortraitToRealityUITests";
+			sourceTree = "<group>";
+		};
+		DE897D282F648ECA3F997FE7027A62E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF18E18263F00825D218DE926F0B6A6A /* ARVideoKit.modulemap */,
+				EB2C4FF9B2D33CF65A13CB1D3F3B40E9 /* ARVideoKit.xcconfig */,
+				73BBCB1E565D74479309F9DB23F0C514 /* ARVideoKit-dummy.m */,
+				7AA8F00D2A89AFB754CAD4C10C1188EA /* ARVideoKit-Info.plist */,
+				3B6E2AC7AA5609E5CF1CBB600CFA7D56 /* ARVideoKit-prefix.pch */,
+				8DF315CA95E2C6B55DEFF06A6D340822 /* ARVideoKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ARVideoKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		552AAFC13952FEEA37B2314A089E73F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED542F756B9CCBB3E43E712385CDDF2 /* Pods-PortraitToReality-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8B85D55C2701FAC2DD8C84B5C99DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6C585E59F8A2C8C24DE47C2254BAE7 /* Pods-PortraitToRealityTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEB22AE21575396DE1F1F5FC70945C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80F072960BBB98D5C1C0A355DF23CC4 /* ARVideoKit-umbrella.h in Headers */,
+				8053DBF940CDB20ECE5B27EA790B0CF0 /* ARVideoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA28500648F51FAFCD571443B1405DF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475A89032A8763D8E2ADD6B21783FA68 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		72923DBEAD9E4CA3ED698AE66BE16DC1 /* Pods-PortraitToReality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8330CD289B81ECC2E09954F32B259F /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */;
+			buildPhases = (
+				552AAFC13952FEEA37B2314A089E73F3 /* Headers */,
+				36FA02F8D91B1D20D67B4F9AD4A58CD7 /* Sources */,
+				E71183D3597B12853855AF9F3E20AF0E /* Frameworks */,
+				4152898820575E0F63A66F723B26502A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E56A9AF99B159A7E5756A0371E366C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-PortraitToReality";
+			productName = "Pods-PortraitToReality";
+			productReference = 123A51F602FC261F3BE3AB074DCBF584 /* Pods_PortraitToReality.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4E03F59A32541EDF246A95FF103B354 /* Pods-PortraitToRealityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5233E00DD20BD8F94ED91182C876E417 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */;
+			buildPhases = (
+				DA28500648F51FAFCD571443B1405DF2 /* Headers */,
+				13D4F4F4DEE256A9FA5A4CDC7D289775 /* Sources */,
+				F8A13B2918D0DAE4FF8DB2BF290D5E44 /* Frameworks */,
+				1F78D26151504DE5F01AB62E6E4AF7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D295881646784E81634838AC25BB51DE /* PBXTargetDependency */,
+			);
+			name = "Pods-PortraitToRealityUITests";
+			productName = "Pods-PortraitToRealityUITests";
+			productReference = 548CCFBEBB88BEA87B71DFAE28C0DF62 /* Pods_PortraitToRealityUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9193356F7B895A7E30E7263ED7C0706A /* Build configuration list for PBXNativeTarget "ARVideoKit" */;
+			buildPhases = (
+				CDEB22AE21575396DE1F1F5FC70945C3 /* Headers */,
+				24DBDD883122A641EDC82A7F99A3561C /* Sources */,
+				081283A743AE753883BB94D1062C3DE8 /* Frameworks */,
+				40E28F5DE092C86D161D67D87CAB136F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARVideoKit;
+			productName = ARVideoKit;
+			productReference = 3C60F8149BE75102DE44CA9514CD5BA8 /* ARVideoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEF272E92878E71D64A4B4CB77F007CA /* Pods-PortraitToRealityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A93A962E0958C405D9B268FB0291B37 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */;
+			buildPhases = (
+				6EB8B85D55C2701FAC2DD8C84B5C99DC /* Headers */,
+				4CA61ABFDE7EEB95AB20E3FA7076259A /* Sources */,
+				D5E9BC98FDDB7538D58789FF76952B72 /* Frameworks */,
+				3142511B75AD83E2F251E526C5522737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B55A258D46ADA6FFC3B2AA3E678C28 /* PBXTargetDependency */,
+			);
+			name = "Pods-PortraitToRealityTests";
+			productName = "Pods-PortraitToRealityTests";
+			productReference = 4E832A2DDCDE109E2E71683C07BA4194 /* Pods_PortraitToRealityTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9B04861A19BE645DFD0218952D37FE94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */,
+				72923DBEAD9E4CA3ED698AE66BE16DC1 /* Pods-PortraitToReality */,
+				EEF272E92878E71D64A4B4CB77F007CA /* Pods-PortraitToRealityTests */,
+				A4E03F59A32541EDF246A95FF103B354 /* Pods-PortraitToRealityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F78D26151504DE5F01AB62E6E4AF7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3142511B75AD83E2F251E526C5522737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E28F5DE092C86D161D67D87CAB136F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05F589ABA8F00784B246332BF2B16 /* video.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4152898820575E0F63A66F723B26502A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13D4F4F4DEE256A9FA5A4CDC7D289775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D38B14C91D9E1C3D15648C38EBDD55E /* Pods-PortraitToRealityUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DBDD883122A641EDC82A7F99A3561C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5A5A25CE83FAD83DD3E4624889DE11 /* ARInputViewOptions.swift in Sources */,
+				7BB36648630833A6D3384593CC4459C9 /* ARVideoKit-dummy.m in Sources */,
+				712E7B0D1B22788AE10FD2512DD570B3 /* ARVideoOptions.swift in Sources */,
+				ADA094D3BFDF8E0A57AD854D27AEE3A0 /* ARView.swift in Sources */,
+				0707B973477D81DA276897662379C446 /* CGImage+Resize.swift in Sources */,
+				75BB033DA0BC5A8ADB50FE4C8C0E716A /* Generate+GIF.swift in Sources */,
+				7466B4802D68962D1F967A669527D1EF /* Generate+LivePhoto.swift in Sources */,
+				13D7A04A3A45B18AAC1011D1A8DA3624 /* JPEG.swift in Sources */,
+				FC9CE20B1EE47E89D7EB1BE2643B3A56 /* PHLivePhotoPlus.swift in Sources */,
+				93F17B9BFC168DAA500021F40C4BE08C /* QuickTimeMov.swift in Sources */,
+				72EF598593CDF29452D8B32714908CE9 /* RecordAR+PhotoRender.swift in Sources */,
+				E4F2B0C269DDDFB304CE3E53BA7E26FA /* RecordAR.swift in Sources */,
+				1313196D3B56D75EDCAD457C9C2B3997 /* RecordARDelegate.swift in Sources */,
+				1034F0E5E903C929EE48F01228B3612D /* RenderAR.swift in Sources */,
+				64CAD969F31ABF18EF54B79E660646F2 /* RenderARDelegate.swift in Sources */,
+				D9F31D313E39AD03850BA27FF69DE2B2 /* UIImage+VideoBuffer.swift in Sources */,
+				ADFD6E3854DA0C5738074605AE6D99E7 /* UIView+isType.swift in Sources */,
+				D4603C35CBA5036FBD4E08AAEDAC2BC4 /* UIViewController+hasType.swift in Sources */,
+				8158400300FB97D3C606B2C195538F8D /* ViewAR.swift in Sources */,
+				E029E86F9A49C498BB987E57149EA774 /* WritAR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FA02F8D91B1D20D67B4F9AD4A58CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64C8C42EA71208CA24E06164CA26E07 /* Pods-PortraitToReality-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA61ABFDE7EEB95AB20E3FA7076259A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB658B6D9490E0FDDC04E0327064A83 /* Pods-PortraitToRealityTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E56A9AF99B159A7E5756A0371E366C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARVideoKit;
+			target = D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */;
+			targetProxy = 7E99895E9B82642725F68E28C98C4857 /* PBXContainerItemProxy */;
+		};
+		91B55A258D46ADA6FFC3B2AA3E678C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PortraitToReality";
+			target = 72923DBEAD9E4CA3ED698AE66BE16DC1 /* Pods-PortraitToReality */;
+			targetProxy = D47ABABB71F9536333C59E1491CD4FF7 /* PBXContainerItemProxy */;
+		};
+		D295881646784E81634838AC25BB51DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PortraitToReality";
+			target = 72923DBEAD9E4CA3ED698AE66BE16DC1 /* Pods-PortraitToReality */;
+			targetProxy = 9F06FA22DD013972FD0EFB4A520A4173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AD7A1F42B1EE925B9E9605A320856F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2C4FF9B2D33CF65A13CB1D3F3B40E9 /* ARVideoKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C087E0B1362B76608002072906A10E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1ECA52AF76CDA62636BAA32225435424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2C4FF9B2D33CF65A13CB1D3F3B40E9 /* ARVideoKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56E6A02531273DE5E8C4829EF5E79410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A9F105AE21C156DC54C0F01974817E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BB90FB3DDF8C8099CEEC8CE5256C107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A8977D6C02C2596438D691188EC044CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F80939DCE14551413720EFD90C6EBEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5233E00DD20BD8F94ED91182C876E417 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8977D6C02C2596438D691188EC044CD /* Debug */,
+				6BB90FB3DDF8C8099CEEC8CE5256C107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A93A962E0958C405D9B268FB0291B37 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C087E0B1362B76608002072906A10E9 /* Debug */,
+				5A9F105AE21C156DC54C0F01974817E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9193356F7B895A7E30E7263ED7C0706A /* Build configuration list for PBXNativeTarget "ARVideoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD7A1F42B1EE925B9E9605A320856F3 /* Debug */,
+				1ECA52AF76CDA62636BAA32225435424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8330CD289B81ECC2E09954F32B259F /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80939DCE14551413720EFD90C6EBEB7 /* Debug */,
+				56E6A02531273DE5E8C4829EF5E79410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

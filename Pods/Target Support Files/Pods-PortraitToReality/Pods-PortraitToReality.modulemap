@@ -1,0 +1,6 @@
+framework module Pods_PortraitToReality {
+  umbrella header "Pods-PortraitToReality-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_PortraitToRealityUITests {
+  umbrella header "Pods-PortraitToRealityUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
