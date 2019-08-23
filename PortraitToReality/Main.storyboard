@@ -13,7 +13,7 @@
         <!--Virtual Reality View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="VirtualRealityViewController" storyboardIdentifier="VirtualRealityViewController" id="BYZ-38-t0r" customClass="VirtualRealityViewController" customModule="WindowDoors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="VirtualRealityViewController" storyboardIdentifier="VirtualRealityViewController" id="BYZ-38-t0r" customClass="VirtualRealityViewController" customModule="PortraitToReality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,13 +28,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MVE-ys-Jc3"/>
                                 </connections>
                             </arscnView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5f-d6-SPR">
-                                <rect key="frame" x="16" y="36" width="117" height="27.5"/>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
-                                <color key="textColor" red="0.94509953260000001" green="0.94121956829999998" blue="0.94101774689999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-uo-a2D">
                                 <rect key="frame" x="157.5" y="567" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,6 +133,15 @@
                                     <constraint firstAttribute="width" constant="111.5" id="vSx-Ex-cev"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5f-d6-SPR" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="16" y="36" width="343" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="morphingEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -149,16 +151,17 @@
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="737-te-9ti"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaL-5o-8Ra" secondAttribute="trailing" constant="16" id="7Ip-zJ-BTc"/>
                             <constraint firstItem="XOi-vp-Qw5" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="7m8-D2-weS"/>
-                            <constraint firstItem="H5f-d6-SPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EBo-uN-4Bm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4b0-nE-FEt" secondAttribute="bottom" constant="40" id="QBT-iv-TJ6"/>
                             <constraint firstItem="XOi-vp-Qw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TgU-B1-qLG"/>
-                            <constraint firstItem="H5f-d6-SPR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="aJ1-XB-B6X"/>
+                            <constraint firstItem="H5f-d6-SPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y9l-QW-jsD"/>
                             <constraint firstItem="4b0-nE-FEt" firstAttribute="centerX" secondItem="G6K-uo-a2D" secondAttribute="centerX" id="bIJ-5z-M30"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="db5-Zk-bF8"/>
                             <constraint firstItem="LaL-5o-8Ra" firstAttribute="height" secondItem="4b0-nE-FEt" secondAttribute="height" id="epr-cX-zIp"/>
+                            <constraint firstItem="H5f-d6-SPR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="goG-8a-atk"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gz5-UX-2kc"/>
                             <constraint firstItem="rqm-bR-pGm" firstAttribute="bottom" secondItem="2ov-1x-vF4" secondAttribute="bottom" id="kZ3-k9-gnd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lGe-8r-iYb" secondAttribute="trailing" id="lzp-eF-0yl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H5f-d6-SPR" secondAttribute="trailing" constant="16" id="m3a-8O-pNe"/>
                             <constraint firstItem="G6K-uo-a2D" firstAttribute="centerX" secondItem="zhg-U5-Pfa" secondAttribute="centerX" id="myg-r3-J3E"/>
                             <constraint firstItem="rqm-bR-pGm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="nu1-Ta-ZAt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zhg-U5-Pfa" secondAttribute="bottom" id="oXe-Yh-L43"/>
@@ -166,7 +169,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ov-1x-vF4" secondAttribute="trailing" constant="16" id="qTr-Nq-2mY"/>
                             <constraint firstItem="zhg-U5-Pfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="rYS-Rw-mme"/>
                             <constraint firstItem="LaL-5o-8Ra" firstAttribute="top" secondItem="2ov-1x-vF4" secondAttribute="bottom" constant="8" id="x84-su-JON"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H5f-d6-SPR" secondAttribute="trailing" constant="242" id="xGx-Lz-Dsl"/>
                             <constraint firstItem="LaL-5o-8Ra" firstAttribute="width" secondItem="4b0-nE-FEt" secondAttribute="width" id="zEF-Iy-IiF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G6K-uo-a2D" secondAttribute="bottom" constant="40" id="zhB-fM-2KJ"/>
                         </constraints>
@@ -181,7 +183,7 @@
                         <outlet property="photoButtonOutlet" destination="G6K-uo-a2D" id="49U-kD-YHh"/>
                         <outlet property="photoToVideoSwitchOutlet" destination="XOi-vp-Qw5" id="Yoh-Vb-m14"/>
                         <outlet property="sceneView" destination="zhg-U5-Pfa" id="0PP-BW-icY"/>
-                        <outlet property="stateLabel" destination="H5f-d6-SPR" id="74t-wa-GTP"/>
+                        <outlet property="stateLabel" destination="H5f-d6-SPR" id="pzn-s7-5Gf"/>
                         <outlet property="stepperViewLeadingConstraint" destination="nu1-Ta-ZAt" id="Aeu-qT-2MT"/>
                         <outlet property="videoButtonOutlet" destination="4b0-nE-FEt" id="ocO-XJ-eEb"/>
                         <outlet property="widthLabel" destination="fpy-Xg-m9S" id="qJH-NV-AXZ"/>
@@ -194,8 +196,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menu" width="256" height="256"/>
-        <image name="photoRecord" width="256" height="256"/>
-        <image name="videoRecord" width="256" height="256"/>
+        <image name="menu" width="512" height="512"/>
+        <image name="photoRecord" width="512" height="512"/>
+        <image name="videoRecord" width="512" height="512"/>
     </resources>
 </document>

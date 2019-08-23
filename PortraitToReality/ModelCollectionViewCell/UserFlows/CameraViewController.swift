@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 import ARKit
 import ARVideoKit
-
-
+import LTMorphingLabel
 
 
 class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
@@ -20,7 +19,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var photoButtonOutlet: UIButton!
     @IBOutlet weak var videoButtonOutlet: UIButton!
-    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var stateLabel: LTMorphingLabel!
     @IBOutlet weak var photoToVideoSwitchOutlet: UISwitch!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewTrailingConstraint: NSLayoutConstraint!
@@ -271,21 +270,30 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         switch camera.trackingState {
         case .normal :
+           
+            stateLabel.morphingEffect = .evaporate
             stateLabel.text = "Camera state is ready to use"
-            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+            
+            
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
         case .notAvailable:
+            stateLabel.morphingEffect = .scale
             stateLabel.text = "Tracking not available."
-            stateLabel.backgroundColor = .red
+        //            stateLabel.backgroundColor = .red
         case .limited(.excessiveMotion):
+            stateLabel.morphingEffect = .scale
             stateLabel.text = "Tracking limited - Move the device more slowly."
-            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
         case .limited(.insufficientFeatures):
+            stateLabel.morphingEffect = .scale
             stateLabel.text = "Tracking limited - Point the device at an area with visible surface detail."
-            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
         case .limited(.initializing):
+            stateLabel.morphingEffect = .scale
             stateLabel.text = "Initializing AR session."
-            stateLabel.backgroundColor = .orange
+        //            stateLabel.backgroundColor = .orange
         default:
+            
             stateLabel.text = ""
         }
     }

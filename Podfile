@@ -8,6 +8,7 @@ target 'PortraitToReality' do
   # Pods for PortraitToReality
   
   pod 'ARVideoKit'
+  pod 'LTMorphingLabel'
 
 
   target 'PortraitToRealityTests' do
