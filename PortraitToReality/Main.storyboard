@@ -61,18 +61,18 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaL-5o-8Ra">
-                                <rect key="frame" x="299" y="567" width="60" height="60"/>
+                                <rect key="frame" x="324" y="579.5" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="buQ-O6-F3n"/>
-                                    <constraint firstAttribute="height" constant="60" id="vXl-lh-IOp"/>
+                                    <constraint firstAttribute="width" constant="35" id="buQ-O6-F3n"/>
+                                    <constraint firstAttribute="height" constant="35" id="vXl-lh-IOp"/>
                                 </constraints>
-                                <state key="normal" image="menu"/>
+                                <state key="normal" image="options"/>
                                 <connections>
                                     <action selector="menuActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIl-qp-6nN"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2ov-1x-vF4">
-                                <rect key="frame" x="259" y="305" width="100" height="254"/>
+                                <rect key="frame" x="259" y="305" width="100" height="252.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="MDr-kb-wUN"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-bR-pGm">
-                                <rect key="frame" x="8" y="429" width="111.5" height="130"/>
+                                <rect key="frame" x="8" y="427.5" width="111.5" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="height :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXH-zf-YO4">
                                         <rect key="frame" x="8" y="8" width="95.5" height="16"/>
@@ -147,19 +147,19 @@
                         <constraints>
                             <constraint firstItem="zhg-U5-Pfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2MR-mq-A2e"/>
                             <constraint firstItem="2ov-1x-vF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="285" id="418-uA-k3Q"/>
-                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="4i5-aa-hk8"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="737-te-9ti"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaL-5o-8Ra" secondAttribute="trailing" constant="16" id="7Ip-zJ-BTc"/>
+                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="73w-9x-7ba"/>
                             <constraint firstItem="XOi-vp-Qw5" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="7m8-D2-weS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4b0-nE-FEt" secondAttribute="bottom" constant="40" id="QBT-iv-TJ6"/>
                             <constraint firstItem="XOi-vp-Qw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TgU-B1-qLG"/>
                             <constraint firstItem="H5f-d6-SPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y9l-QW-jsD"/>
                             <constraint firstItem="4b0-nE-FEt" firstAttribute="centerX" secondItem="G6K-uo-a2D" secondAttribute="centerX" id="bIJ-5z-M30"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="db5-Zk-bF8"/>
-                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="height" secondItem="4b0-nE-FEt" secondAttribute="height" id="epr-cX-zIp"/>
+                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="top" secondItem="2ov-1x-vF4" secondAttribute="bottom" constant="22" id="dnt-fr-Q7h"/>
                             <constraint firstItem="H5f-d6-SPR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="goG-8a-atk"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gz5-UX-2kc"/>
                             <constraint firstItem="rqm-bR-pGm" firstAttribute="bottom" secondItem="2ov-1x-vF4" secondAttribute="bottom" id="kZ3-k9-gnd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaL-5o-8Ra" secondAttribute="trailing" constant="16" id="loy-2W-rbl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lGe-8r-iYb" secondAttribute="trailing" id="lzp-eF-0yl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H5f-d6-SPR" secondAttribute="trailing" constant="16" id="m3a-8O-pNe"/>
                             <constraint firstItem="G6K-uo-a2D" firstAttribute="centerX" secondItem="zhg-U5-Pfa" secondAttribute="centerX" id="myg-r3-J3E"/>
@@ -168,8 +168,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zhg-U5-Pfa" secondAttribute="trailing" id="opQ-wB-Yvw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ov-1x-vF4" secondAttribute="trailing" constant="16" id="qTr-Nq-2mY"/>
                             <constraint firstItem="zhg-U5-Pfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="rYS-Rw-mme"/>
-                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="top" secondItem="2ov-1x-vF4" secondAttribute="bottom" constant="8" id="x84-su-JON"/>
-                            <constraint firstItem="LaL-5o-8Ra" firstAttribute="width" secondItem="4b0-nE-FEt" secondAttribute="width" id="zEF-Iy-IiF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G6K-uo-a2D" secondAttribute="bottom" constant="40" id="zhB-fM-2KJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -196,7 +194,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menu" width="512" height="512"/>
+        <image name="options" width="512" height="512"/>
         <image name="photoRecord" width="512" height="512"/>
         <image name="videoRecord" width="512" height="512"/>
     </resources>

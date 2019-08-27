@@ -44,8 +44,8 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
                                       ObjectModel(modelImage: UIImage(named: "vangooh2"), modelName: "vangooh") ]
     
     // MARK: - Properties
-    var object = SCNNode()
-    var recorder: RecordAR?
+    private var object = SCNNode()
+    private var recorder: RecordAR?
     var videoIsRecording = false
     var menuIsVisible = false
     var modelImageName = "picasso"
@@ -82,10 +82,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.delegate = self
         
-        collectionViewTrailingConstraint.constant = -150
-        stepperViewLeadingConstraint.constant = -150
-        heightLabel.text = "height : \(Float(heightStepperOutlet.value))"
-        widthLabel.text = "width : \(Float(widthStepperOutlet.value))"
+        setAdditionallViews()
     }
     
     
@@ -164,6 +161,14 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         objectWidth = sender.value
     }
     
+    func setAdditionallViews() {
+        
+        collectionViewTrailingConstraint.constant = -150
+        stepperViewLeadingConstraint.constant = -150
+        heightLabel.text = "height : \(Float(heightStepperOutlet.value))"
+        widthLabel.text = "width : \(Float(widthStepperOutlet.value))"
+    }
+    
     
     // MARK: - Add object to view
     func addObjectToView(x: Float = 0, y: Float = 0, z: Float = 0) {
@@ -175,7 +180,9 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         material.diffuse.contents = UIImage(named: modelImageName)
         boxObject.materials = [material]
         
-        object.geometry = boxObject
+         let boxObjectNode = SCNNode(geometry: boxObject)
+        
+        object = boxObjectNode
         object.position = SCNVector3(x, y, z)
         
         sceneView.scene.rootNode.addChildNode(object)
@@ -188,8 +195,8 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
     @objc func addActionToView(withGestureRecognizer recognizer: UIGestureRecognizer) {
+    
         
-        // add BOX object
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation)
         guard let node = hitTestResults.first?.node else {

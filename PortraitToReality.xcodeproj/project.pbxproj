@@ -22,7 +22,7 @@
 		6B087A46230D26A1006C1B67 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A45230D26A1006C1B67 /* ObjectModel.swift */; };
 		6B087A4A230D26A8006C1B67 /* ModelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B087A48230D26A8006C1B67 /* ModelCollectionViewCell.xib */; };
 		6B087A4B230D26A8006C1B67 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A49230D26A8006C1B67 /* ModelCollectionViewCell.swift */; };
-		6B087A4E230D26AF006C1B67 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A4D230D26AE006C1B67 /* CameraViewController.swift */; };
+		6B087A4E230D26AF006C1B67 /* VirtualRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A4D230D26AE006C1B67 /* VirtualRealityViewController.swift */; };
 		B0C56A58CDD23C82A4B6A8A9 /* Pods_PortraitToRealityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA02AFFA679DD73A16B2790B /* Pods_PortraitToRealityTests.framework */; };
 		D4056406EC30251422D7AF43 /* Pods_PortraitToReality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3287861A0E01E5CBC796E539 /* Pods_PortraitToReality.framework */; };
 /* End PBXBuildFile section */
@@ -68,7 +68,7 @@
 		6B087A45230D26A1006C1B67 /* ObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
 		6B087A48230D26A8006C1B67 /* ModelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelCollectionViewCell.xib; sourceTree = "<group>"; };
 		6B087A49230D26A8006C1B67 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
-		6B087A4D230D26AE006C1B67 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6B087A4D230D26AE006C1B67 /* VirtualRealityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRealityViewController.swift; sourceTree = "<group>"; };
 		9DB7C3C0E5F70663ABD7768F /* Pods-PortraitToRealityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitToRealityTests.release.xcconfig"; path = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.release.xcconfig"; sourceTree = "<group>"; };
 		A36BC0B5D1BF941C2E4AC383 /* Pods-PortraitToRealityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitToRealityUITests.debug.xcconfig"; path = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B834FFD1588711B5DC957713 /* Pods_PortraitToRealityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,7 +214,7 @@
 		6B087A4C230D26AE006C1B67 /* UserFlows */ = {
 			isa = PBXGroup;
 			children = (
-				6B087A4D230D26AE006C1B67 /* CameraViewController.swift */,
+				6B087A4D230D26AE006C1B67 /* VirtualRealityViewController.swift */,
 			);
 			name = UserFlows;
 			path = ModelCollectionViewCell/UserFlows;
@@ -465,7 +465,7 @@
 				6B087A41230D2688006C1B67 /* Junk.swift in Sources */,
 				6B087A42230D2688006C1B67 /* FlashAnimation.swift in Sources */,
 				6B087A46230D26A1006C1B67 /* ObjectModel.swift in Sources */,
-				6B087A4E230D26AF006C1B67 /* CameraViewController.swift in Sources */,
+				6B087A4E230D26AF006C1B67 /* VirtualRealityViewController.swift in Sources */,
 				6B087A4B230D26A8006C1B67 /* ModelCollectionViewCell.swift in Sources */,
 				6B087A09230D2555006C1B67 /* AppDelegate.swift in Sources */,
 			);
