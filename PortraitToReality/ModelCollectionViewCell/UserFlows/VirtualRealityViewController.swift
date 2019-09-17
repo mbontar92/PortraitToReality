@@ -17,6 +17,8 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: - Outlets
     @IBOutlet weak var sceneView: ARSCNView!
+
+    
     @IBOutlet weak var photoButtonOutlet: UIButton!
     @IBOutlet weak var videoButtonOutlet: UIButton!
     @IBOutlet weak var stateLabel: LTMorphingLabel!
@@ -44,7 +46,10 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
                                       ObjectModel(modelImage: UIImage(named: "vangooh2"), modelName: "vangooh") ]
     
     // MARK: - Properties
+    private var objectScene: SCNScene!
     private var object = SCNNode()
+    private var boxObject = SCNBox()
+    private let material = SCNMaterial()
     private var recorder: RecordAR?
     var videoIsRecording = false
     var menuIsVisible = false
@@ -174,9 +179,8 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     func addObjectToView(x: Float = 0, y: Float = 0, z: Float = 0) {
         
         // box heihgt and width
-        let boxObject = SCNBox(width: CGFloat(objectWidth), height: CGFloat(objectHeight), length: 0.06, chamferRadius: 0)
+        boxObject = SCNBox(width: CGFloat(objectWidth), height: CGFloat(objectHeight), length: 0.06, chamferRadius: 0)
         // material
-        let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: modelImageName)
         boxObject.materials = [material]
         
@@ -187,7 +191,20 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.scene.rootNode.addChildNode(object)
     }
-    
+    /*
+    // MARK: - Add model to view
+    func addModelToView(x: Float = 0, y: Float = 0, z: Float = 0) {
+        if let shipScene = SCNScene(named: "spaceship.scn") {
+            
+            if let shipNode = shipScene.rootNode.childNode(withName: "spaceship", recursively: false) {
+                
+                object = shipNode
+                object.position = SCNVector3(x, y, z)
+                sceneView.scene.rootNode.addChildNode(object)
+            }
+        }
+    }
+    */
         
     // MARK: - addTapGestureToSceneView
     func addTapGestureToSceneView() {
@@ -205,6 +222,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
                 let translation = hitTestResultWithFeaturePoints.worldTransform.translation
                 
                 addObjectToView(x: translation.x, y: translation.y, z: translation.z)
+//                addModelToView(x: translation.x, y: translation.y, z: translation.z)
             }
             return
         }

@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2ov-1x-vF4">
-                                <rect key="frame" x="259" y="305" width="100" height="252.5"/>
+                                <rect key="frame" x="259" y="120" width="100" height="437.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="MDr-kb-wUN"/>
@@ -146,7 +146,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zhg-U5-Pfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2MR-mq-A2e"/>
-                            <constraint firstItem="2ov-1x-vF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="285" id="418-uA-k3Q"/>
+                            <constraint firstItem="2ov-1x-vF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="418-uA-k3Q"/>
                             <constraint firstItem="lGe-8r-iYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="737-te-9ti"/>
                             <constraint firstItem="LaL-5o-8Ra" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="73w-9x-7ba"/>
                             <constraint firstItem="XOi-vp-Qw5" firstAttribute="centerY" secondItem="4b0-nE-FEt" secondAttribute="centerY" id="7m8-D2-weS"/>
@@ -172,6 +172,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Okx-NG-an3"/>
                     <connections>
                         <outlet property="collectionView" destination="2ov-1x-vF4" id="jg8-eU-uBN"/>
                         <outlet property="collectionViewTrailingConstraint" destination="qTr-Nq-2mY" id="JSB-WA-RDY"/>

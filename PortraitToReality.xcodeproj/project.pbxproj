@@ -23,6 +23,7 @@
 		6B087A4A230D26A8006C1B67 /* ModelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B087A48230D26A8006C1B67 /* ModelCollectionViewCell.xib */; };
 		6B087A4B230D26A8006C1B67 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A49230D26A8006C1B67 /* ModelCollectionViewCell.swift */; };
 		6B087A4E230D26AF006C1B67 /* VirtualRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A4D230D26AE006C1B67 /* VirtualRealityViewController.swift */; };
+		6B25E0492315359500E93C40 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B25E0482315359500E93C40 /* art.scnassets */; };
 		B0C56A58CDD23C82A4B6A8A9 /* Pods_PortraitToRealityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA02AFFA679DD73A16B2790B /* Pods_PortraitToRealityTests.framework */; };
 		D4056406EC30251422D7AF43 /* Pods_PortraitToReality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3287861A0E01E5CBC796E539 /* Pods_PortraitToReality.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		6B087A48230D26A8006C1B67 /* ModelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelCollectionViewCell.xib; sourceTree = "<group>"; };
 		6B087A49230D26A8006C1B67 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B087A4D230D26AE006C1B67 /* VirtualRealityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRealityViewController.swift; sourceTree = "<group>"; };
+		6B25E0482315359500E93C40 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		9DB7C3C0E5F70663ABD7768F /* Pods-PortraitToRealityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitToRealityTests.release.xcconfig"; path = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.release.xcconfig"; sourceTree = "<group>"; };
 		A36BC0B5D1BF941C2E4AC383 /* Pods-PortraitToRealityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitToRealityUITests.debug.xcconfig"; path = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B834FFD1588711B5DC957713 /* Pods_PortraitToRealityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 		6B087A36230D2664006C1B67 /* 3DModel */ = {
 			isa = PBXGroup;
 			children = (
+				6B25E0482315359500E93C40 /* art.scnassets */,
 				6B087A37230D2664006C1B67 /* ship.scn */,
 				6B087A38230D2664006C1B67 /* ship.png */,
 			);
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B087A13230D2557006C1B67 /* LaunchScreen.storyboard in Resources */,
+				6B25E0492315359500E93C40 /* art.scnassets in Resources */,
 				6B087A3C230D2681006C1B67 /* Main.storyboard in Resources */,
 				6B087A3A230D2665006C1B67 /* ship.png in Resources */,
 				6B087A10230D2557006C1B67 /* Assets.xcassets in Resources */,
