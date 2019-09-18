@@ -14,10 +14,10 @@ import LTMorphingLabel
 
 
 class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
-
+    
     // MARK: - Outlets
     @IBOutlet weak var sceneView: ARSCNView!
-
+    
     
     @IBOutlet weak var photoButtonOutlet: UIButton!
     @IBOutlet weak var videoButtonOutlet: UIButton!
@@ -35,7 +35,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var widthStepperOutlet: UIStepper!
     
     
-
+    
     var modelsArray: [ObjectModel] = [ObjectModel(modelImage: UIImage(named: "picasso"), modelName: "picasso"),
                                       ObjectModel(modelImage: UIImage(named: "picasso1"), modelName: "picasso1"),
                                       ObjectModel(modelImage: UIImage(named: "picasso2"), modelName: "picasso2"),
@@ -49,14 +49,16 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     private var objectScene: SCNScene!
     private var object = SCNNode()
     private var boxObject = SCNBox()
+    private var boxObjectNode = SCNNode()
     private let material = SCNMaterial()
+    
     private var recorder: RecordAR?
     var videoIsRecording = false
     var menuIsVisible = false
     var modelImageName = "picasso"
     var objectHeight = 1.2
     var objectWidth = 0.8
-
+    
     
     // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -71,7 +73,6 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         
         collectionView.register(UINib(nibName: "ModelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ModelCollectionViewCell")
-    
     }
     
     
@@ -111,7 +112,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-
+    
     // MARK: take a photo Button
     @IBAction func photoActionButton(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(sceneView.snapshot(), nil, nil, nil)
@@ -141,13 +142,13 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         if menuIsVisible == false {
             stepperViewLeadingConstraint.constant = 30
             self.collectionViewTrailingConstraint.constant = 10
-            UIView.animate(withDuration: 0.7) {
+            UIView.animate(withDuration: 0.4) {
                 self.view.layoutIfNeeded()
             }
         } else {
             stepperViewLeadingConstraint.constant = -150
             self.collectionViewTrailingConstraint.constant = -200
-            UIView.animate(withDuration: 0.7) {
+            UIView.animate(withDuration: 0.4) {
                 self.view.layoutIfNeeded()
             }
         }
@@ -184,7 +185,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         material.diffuse.contents = UIImage(named: modelImageName)
         boxObject.materials = [material]
         
-         let boxObjectNode = SCNNode(geometry: boxObject)
+        boxObjectNode = SCNNode(geometry: boxObject)
         
         object = boxObjectNode
         object.position = SCNVector3(x, y, z)
@@ -192,27 +193,27 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.addChildNode(object)
     }
     /*
-    // MARK: - Add model to view
-    func addModelToView(x: Float = 0, y: Float = 0, z: Float = 0) {
-        if let shipScene = SCNScene(named: "spaceship.scn") {
-            
-            if let shipNode = shipScene.rootNode.childNode(withName: "spaceship", recursively: false) {
-                
-                object = shipNode
-                object.position = SCNVector3(x, y, z)
-                sceneView.scene.rootNode.addChildNode(object)
-            }
-        }
-    }
-    */
-        
+     // MARK: - Add model to view
+     func addModelToView(x: Float = 0, y: Float = 0, z: Float = 0) {
+     if let shipScene = SCNScene(named: "spaceship.scn") {
+     
+     if let shipNode = shipScene.rootNode.childNode(withName: "spaceship", recursively: false) {
+     
+     object = shipNode
+     object.position = SCNVector3(x, y, z)
+     sceneView.scene.rootNode.addChildNode(object)
+     }
+     }
+     }
+     */
+    
     // MARK: - addTapGestureToSceneView
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(VirtualRealityViewController.addActionToView(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
     @objc func addActionToView(withGestureRecognizer recognizer: UIGestureRecognizer) {
-    
+        
         
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation)
@@ -222,7 +223,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
                 let translation = hitTestResultWithFeaturePoints.worldTransform.translation
                 
                 addObjectToView(x: translation.x, y: translation.y, z: translation.z)
-//                addModelToView(x: translation.x, y: translation.y, z: translation.z)
+                //                addModelToView(x: translation.x, y: translation.y, z: translation.z)
             }
             return
         }
@@ -236,7 +237,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         sceneView.addGestureRecognizer(pinchGesture)
     }
     @objc func didPinch(_ gesture: UIPinchGestureRecognizer) {
-
+        
         var originalScale = object.scale
         
         switch gesture.state {
@@ -244,7 +245,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
             originalScale = object.scale
             gesture.scale = CGFloat((object.scale.x))
         case .changed:
-             var newScale = originalScale
+            var newScale = originalScale
             if gesture.scale < 0.5{ newScale = SCNVector3(x: 0.5, y: 0.5, z: 0.5) }else if gesture.scale > 2{
                 newScale = SCNVector3(2, 2, 2)
             } else {
@@ -278,12 +279,11 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     @objc func didPan(_ gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: gesture.view)
         var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
-    
         
         newAngleY += currentAngleY
         object.eulerAngles.y = newAngleY
         
-        if gesture.state == .ended{
+        if gesture.state == .ended {
             currentAngleY = newAngleY
         }
     }
@@ -295,7 +295,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         switch camera.trackingState {
         case .normal :
-           
+            
             stateLabel.morphingEffect = .evaporate
             stateLabel.text = "Camera state is ready to use"
             
@@ -307,11 +307,11 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         //            stateLabel.backgroundColor = .red
         case .limited(.excessiveMotion):
             stateLabel.morphingEffect = .scale
-            stateLabel.text = "Tracking limited - Move the device more slowly."
+            stateLabel.text = "Tracking limited"
         //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
         case .limited(.insufficientFeatures):
             stateLabel.morphingEffect = .scale
-            stateLabel.text = "Tracking limited - Point the device at an area with visible surface detail."
+            stateLabel.text = "Tracking limited"
         //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
         case .limited(.initializing):
             stateLabel.morphingEffect = .scale
