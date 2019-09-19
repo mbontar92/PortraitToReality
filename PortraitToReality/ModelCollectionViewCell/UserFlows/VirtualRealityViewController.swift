@@ -50,7 +50,6 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     private var object = SCNNode()
     private var boxObject = SCNBox()
     private var boxObjectNode = SCNNode()
-    private let material = SCNMaterial()
     
     private var recorder: RecordAR?
     var videoIsRecording = false
@@ -181,6 +180,7 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         // box heihgt and width
         boxObject = SCNBox(width: CGFloat(objectWidth), height: CGFloat(objectHeight), length: 0.06, chamferRadius: 0)
+        let material = SCNMaterial()
         // material
         material.diffuse.contents = UIImage(named: modelImageName)
         boxObject.materials = [material]
