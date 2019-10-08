@@ -6,7 +6,6 @@
 //  Copyright © 2019 Bontar Mykhailo. All rights reserved.
 //
 import UIKit
-import Foundation
 
 func pulsatingButtonAnimation (button: UIButton) {
     

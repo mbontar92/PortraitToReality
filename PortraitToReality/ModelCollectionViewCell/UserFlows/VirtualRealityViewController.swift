@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import ARKit
-import ARVideoKit
 import LTMorphingLabel
 
 
@@ -17,77 +16,50 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     
     // MARK: - Outlets
     @IBOutlet weak var sceneView: ARSCNView!
-    
-    
     @IBOutlet weak var photoButtonOutlet: UIButton!
-    @IBOutlet weak var videoButtonOutlet: UIButton!
+
     @IBOutlet weak var stateLabel: LTMorphingLabel!
-    @IBOutlet weak var photoToVideoSwitchOutlet: UISwitch!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var stepperViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var lightEffectView: UIView!
     
-    // MARK: - STEPPER outlets
+    // MARK: STEPPER outlets
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var widthLabel: UILabel!
     @IBOutlet weak var heightStepperOutlet: UIStepper!
     @IBOutlet weak var widthStepperOutlet: UIStepper!
-    
-    
-    
-    var modelsArray: [ObjectModel] = [ObjectModel(modelImage: UIImage(named: "picasso"), modelName: "picasso"),
-                                      ObjectModel(modelImage: UIImage(named: "picasso1"), modelName: "picasso1"),
-                                      ObjectModel(modelImage: UIImage(named: "picasso2"), modelName: "picasso2"),
-                                      ObjectModel(modelImage: UIImage(named: "painting1"), modelName: "painting1"),
-                                      ObjectModel(modelImage: UIImage(named: "monalisa"), modelName: "monalisa"),
-                                      ObjectModel(modelImage: UIImage(named: "vangooh"), modelName: "vangooh"),
-                                      ObjectModel(modelImage: UIImage(named: "vangooh1"), modelName: "vangooh"),
-                                      ObjectModel(modelImage: UIImage(named: "vangooh2"), modelName: "vangooh") ]
     
     // MARK: - Properties
     private var objectScene: SCNScene!
     private var object = SCNNode()
     private var boxObject = SCNBox()
     private var boxObjectNode = SCNNode()
+   
     
-    private var recorder: RecordAR?
+    var modelsArray: [ObjectModel] = []
     var videoIsRecording = false
     var menuIsVisible = false
     var modelImageName = "picasso"
-    var objectHeight = 1.2
-    var objectWidth = 0.8
+//    var objectHeight = 1.2
+//    var objectWidth = 0.8
     
     
-    // MARK: - viewDidLoad
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addTapGestureToSceneView()
-        addPinGestureRecognizer()
-        addPanGestureRecognizer()
-        
-        recorder = RecordAR(ARSceneKit: sceneView)
-        recorder?.inputViewOrientations = [.portrait, .landscapeLeft, .landscapeRight]
-        
-        
-        collectionView.register(UINib(nibName: "ModelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ModelCollectionViewCell")
+
+        setUpView()
+        setAdditionallViews()
     }
     
-    
-    // MARK: - viewWillAppear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
-        
-        //        configuration.planeDetection = .vertical
-        //          sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+
         sceneView.session.run(configuration)
-        recorder?.prepare(configuration)
         
         sceneView.delegate = self
-        
-        setAdditionallViews()
     }
     
     
@@ -95,48 +67,16 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
-        recorder?.rest()
     }
     
-    
-    
-    // MARK: switch between photo and video
-    @IBAction func photoOrVideoSwitchAction(_ sender: UISwitch) {
-        if sender.isOn == true {
-            photoButtonOutlet.alpha = 0
-            videoButtonOutlet.alpha = 1
-        } else {
-            photoButtonOutlet.alpha = 1
-            videoButtonOutlet.alpha = 0
-        }
-    }
-    
-    
-    // MARK: take a photo Button
+    // MARK: - IBAction
+    // take a photo Button
     @IBAction func photoActionButton(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(sceneView.snapshot(), nil, nil, nil)
         flashAnimation(mainView: self.view, lightView: lightEffectView)
     }
     
-    
-    // MARK: record video Button
-    @IBAction func videoActionButton(_ sender: Any) {
-        if videoIsRecording == false && recorder?.status == .readyToRecord  {
-            // Start recording
-            recorder?.record()
-            photoToVideoSwitchOutlet.isEnabled = false
-            pulsatingButtonAnimation(button: videoButtonOutlet)
-        } else if recorder?.status == .recording || recorder?.status == .paused {
-            // Finish recording
-            recorder?.stopAndExport()
-            photoToVideoSwitchOutlet.isEnabled = true
-            videoButtonOutlet.layer.removeAllAnimations()
-        }
-        videoIsRecording = !videoIsRecording
-    }
-    
-    
-    // MARK: show menu action button
+    // show menu action button
     @IBAction func menuActionButton(_ sender: Any) {
         if menuIsVisible == false {
             stepperViewLeadingConstraint.constant = 30
@@ -155,57 +95,15 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
-    // MARK: height stepper
+    // height stepper
     @IBAction func heightStepperValueAction(_ sender: UIStepper) {
         heightLabel.text = "height : \(Float(sender.value))"
-        objectHeight = sender.value
     }
-    // MARK: width stepper
+    // width stepper
     @IBAction func widthStepperValueAction(_ sender: UIStepper) {
         widthLabel.text = "width : \(Float(sender.value))"
-        objectWidth = sender.value
     }
-    
-    func setAdditionallViews() {
-        
-        collectionViewTrailingConstraint.constant = -150
-        stepperViewLeadingConstraint.constant = -150
-        heightLabel.text = "height : \(Float(heightStepperOutlet.value))"
-        widthLabel.text = "width : \(Float(widthStepperOutlet.value))"
-    }
-    
-    
-    // MARK: - Add object to view
-    func addObjectToView(x: Float = 0, y: Float = 0, z: Float = 0) {
-        
-        // box heihgt and width
-        boxObject = SCNBox(width: CGFloat(objectWidth), height: CGFloat(objectHeight), length: 0.06, chamferRadius: 0)
-        let material = SCNMaterial()
-        // material
-        material.diffuse.contents = UIImage(named: modelImageName)
-        boxObject.materials = [material]
-        
-        boxObjectNode = SCNNode(geometry: boxObject)
-        
-        object = boxObjectNode
-        object.position = SCNVector3(x, y, z)
-        
-        sceneView.scene.rootNode.addChildNode(object)
-    }
-    /*
-     // MARK: - Add model to view
-     func addModelToView(x: Float = 0, y: Float = 0, z: Float = 0) {
-     if let shipScene = SCNScene(named: "spaceship.scn") {
-     
-     if let shipNode = shipScene.rootNode.childNode(withName: "spaceship", recursively: false) {
-     
-     object = shipNode
-     object.position = SCNVector3(x, y, z)
-     sceneView.scene.rootNode.addChildNode(object)
-     }
-     }
-     }
-     */
+
     
     // MARK: - addTapGestureToSceneView
     func addTapGestureToSceneView() {
@@ -267,7 +165,6 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    
     // MARK: - addPanGestureRecognizer
     func addPanGestureRecognizer(){
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
@@ -285,41 +182,6 @@ class VirtualRealityViewController: UIViewController, ARSCNViewDelegate {
         
         if gesture.state == .ended {
             currentAngleY = newAngleY
-        }
-    }
-    
-    
-    // MARK: - ARSCNViewDelegate
-    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
-        // help us inform the user when the app is ready
-        
-        switch camera.trackingState {
-        case .normal :
-            
-            stateLabel.morphingEffect = .evaporate
-            stateLabel.text = "Camera state is ready to use"
-            
-            
-        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
-        case .notAvailable:
-            stateLabel.morphingEffect = .scale
-            stateLabel.text = "Tracking not available."
-        //            stateLabel.backgroundColor = .red
-        case .limited(.excessiveMotion):
-            stateLabel.morphingEffect = .scale
-            stateLabel.text = "Tracking limited"
-        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
-        case .limited(.insufficientFeatures):
-            stateLabel.morphingEffect = .scale
-            stateLabel.text = "Tracking limited"
-        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
-        case .limited(.initializing):
-            stateLabel.morphingEffect = .scale
-            stateLabel.text = "Initializing AR session."
-        //            stateLabel.backgroundColor = .orange
-        default:
-            
-            stateLabel.text = ""
         }
     }
 }
@@ -370,5 +232,101 @@ extension float4x4 {
     }
 }
 
+// MARK: - ARSCNViewDelegate
+
+extension VirtualRealityViewController {
+    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        // help us inform the user when the app is ready
+        
+        switch camera.trackingState {
+        case .normal :
+            
+            stateLabel.morphingEffect = .evaporate
+            stateLabel.text = "Camera state is ready to use"
+            
+            
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+        case .notAvailable:
+            stateLabel.morphingEffect = .scale
+            stateLabel.text = "Tracking not available."
+        //            stateLabel.backgroundColor = .red
+        case .limited(.excessiveMotion):
+            stateLabel.morphingEffect = .scale
+            stateLabel.text = "Tracking limited"
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
+        case .limited(.insufficientFeatures):
+            stateLabel.morphingEffect = .scale
+            stateLabel.text = "Tracking limited"
+        //            stateLabel.backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1))
+        case .limited(.initializing):
+            stateLabel.morphingEffect = .scale
+            stateLabel.text = "Initializing AR session."
+        //            stateLabel.backgroundColor = .orange
+        default:
+            
+            stateLabel.text = ""
+        }
+    }
+}
 
 
+// MARK: - Private
+extension VirtualRealityViewController {
+    private func setUpView() {
+        addTapGestureToSceneView()
+        addPinGestureRecognizer()
+        addPanGestureRecognizer()
+        
+        collectionView.register(UINib(nibName: "ModelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ModelCollectionViewCell")
+        
+        modelsArray = array
+        
+        heightStepperOutlet.value = 1.2
+        widthStepperOutlet.value = 0.8
+    }
+    
+    private func setAdditionallViews() {
+        
+        collectionViewTrailingConstraint.constant = -150
+        stepperViewLeadingConstraint.constant = -150
+        heightLabel.text = "height : \(Float(heightStepperOutlet.value))"
+        widthLabel.text = "width : \(Float(widthStepperOutlet.value))"
+    }
+}
+
+
+
+// MARK: - Add object to view
+extension VirtualRealityViewController {
+    // MARK: - Add object to view
+    func addObjectToView(x: Float = 0, y: Float = 0, z: Float = 0) {
+        
+        // box heihgt and width
+        boxObject = SCNBox(width: CGFloat(widthStepperOutlet.value), height: CGFloat(heightStepperOutlet.value), length: 0.06, chamferRadius: 0)
+        let material = SCNMaterial()
+        // material
+        material.diffuse.contents = UIImage(named: modelImageName)
+        boxObject.materials = [material]
+        
+        boxObjectNode = SCNNode(geometry: boxObject)
+        
+        object = boxObjectNode
+        object.position = SCNVector3(x, y, z)
+        
+        sceneView.scene.rootNode.addChildNode(object)
+    }
+    /*
+     // MARK: - Add model to view
+     func addModelToView(x: Float = 0, y: Float = 0, z: Float = 0) {
+     if let shipScene = SCNScene(named: "spaceship.scn") {
+     
+     if let shipNode = shipScene.rootNode.childNode(withName: "spaceship", recursively: false) {
+     
+     object = shipNode
+     object.position = SCNVector3(x, y, z)
+     sceneView.scene.rootNode.addChildNode(object)
+     }
+     }
+     }
+     */
+}

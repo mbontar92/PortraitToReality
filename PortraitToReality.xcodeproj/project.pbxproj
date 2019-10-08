@@ -16,7 +16,6 @@
 		6B087A39230D2665006C1B67 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6B087A37230D2664006C1B67 /* ship.scn */; };
 		6B087A3A230D2665006C1B67 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B087A38230D2664006C1B67 /* ship.png */; };
 		6B087A3C230D2681006C1B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B087A3B230D2681006C1B67 /* Main.storyboard */; };
-		6B087A41230D2688006C1B67 /* Junk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A3E230D2688006C1B67 /* Junk.swift */; };
 		6B087A42230D2688006C1B67 /* FlashAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A3F230D2688006C1B67 /* FlashAnimation.swift */; };
 		6B087A43230D2688006C1B67 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A40230D2688006C1B67 /* ButtonAnimation.swift */; };
 		6B087A46230D26A1006C1B67 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B087A45230D26A1006C1B67 /* ObjectModel.swift */; };
@@ -63,7 +62,6 @@
 		6B087A37230D2664006C1B67 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
 		6B087A38230D2664006C1B67 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		6B087A3B230D2681006C1B67 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		6B087A3E230D2688006C1B67 /* Junk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Junk.swift; sourceTree = "<group>"; };
 		6B087A3F230D2688006C1B67 /* FlashAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashAnimation.swift; sourceTree = "<group>"; };
 		6B087A40230D2688006C1B67 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		6B087A45230D26A1006C1B67 /* ObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 		6B087A3D230D2688006C1B67 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				6B087A3E230D2688006C1B67 /* Junk.swift */,
 				6B087A3F230D2688006C1B67 /* FlashAnimation.swift */,
 				6B087A40230D2688006C1B67 /* ButtonAnimation.swift */,
 			);
@@ -421,14 +418,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ARVideoKit/ARVideoKit.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARVideoKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +461,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B087A43230D2688006C1B67 /* ButtonAnimation.swift in Sources */,
-				6B087A41230D2688006C1B67 /* Junk.swift in Sources */,
 				6B087A42230D2688006C1B67 /* FlashAnimation.swift in Sources */,
 				6B087A46230D26A1006C1B67 /* ObjectModel.swift in Sources */,
 				6B087A4E230D26AF006C1B67 /* VirtualRealityViewController.swift in Sources */,
