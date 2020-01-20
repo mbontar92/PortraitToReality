@@ -3,227 +3,160 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0707B973477D81DA276897662379C446 /* CGImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB790065509E917B3BC0B9656384471B /* CGImage+Resize.swift */; };
-		0DA05F589ABA8F00784B246332BF2B16 /* video.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF255376244CB6CF283D0A391A080B7 /* video.scnassets */; };
-		1034F0E5E903C929EE48F01228B3612D /* RenderAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E7FEA6874A383B1B2E06CC5FC13C7 /* RenderAR.swift */; };
-		1313196D3B56D75EDCAD457C9C2B3997 /* RecordARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0B9CD45D82BC1F10FDEF3EDE9FD4E /* RecordARDelegate.swift */; };
-		13D7A04A3A45B18AAC1011D1A8DA3624 /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA80314A920D30A4A5B6277AE1AD58B /* JPEG.swift */; };
-		16B6BD3E99E0486726A0960F56F5A35C /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F5C77437ECF16837BF070F77C579B3 /* LTMorphingLabel+Pixelate.swift */; };
-		185608193FE76FE74E424C80D5963704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */; };
-		1CD36E7DAA36CE195C3AA7D1DC59FB6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */; };
-		1D5969D6C67AEEC04C619CFD0E385DE0 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F423F6C839F0E2732461BF4338512 /* LTMorphingLabel+Sparkle.swift */; };
-		2A2563B4F87FA6D911A01392BF4EE131 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AADFEF6ED5B182B4B66752763F2B23 /* Fire.png */; };
-		33788188B4BE00B818D840EE13A8C530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */; };
-		40FAC3034E582A7D9E5148E5D8B9A629 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FDB30DC272FBE209406A33536CB3A2 /* LTMorphingLabel+Burn.swift */; };
-		475A89032A8763D8E2ADD6B21783FA68 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D38B14C91D9E1C3D15648C38EBDD55E /* Pods-PortraitToRealityUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */; };
-		5CE239B33636C9E6B020122BB9B72133 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23E6659060337F19196726F1CEA06A0 /* UIKit.framework */; };
-		61861FCE2BEC0E780CA4014A6C49156D /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B378B60D13892782043F881FCC501B /* LTMorphingLabel+Fall.swift */; };
-		64CAD969F31ABF18EF54B79E660646F2 /* RenderARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F11BE3EDD8AD2E3C5F68750D4456 /* RenderARDelegate.swift */; };
-		692BCE8722FF3278A04282F6216FFDE9 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6292E9F4F5BF6E801FFB211AB8EC2 /* LTEmitterView.swift */; };
-		694F0C19CDF6D8C91A2A279310CF223C /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E665D9309FD82F76231719A0639FCC7 /* LTStringDiffResult.swift */; };
-		711FD0F9FAF4A7B1A7D6A39D3893155E /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63C3E8DEB5650DF5C8DEF75DE07EAA9 /* LTCharacterDiffResult.swift */; };
-		712E7B0D1B22788AE10FD2512DD570B3 /* ARVideoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19908B7534855A9D2CE96B725771F9B8 /* ARVideoOptions.swift */; };
-		72EF598593CDF29452D8B32714908CE9 /* RecordAR+PhotoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693F76A9D0F059ABFA5F43F9D6EAAE2 /* RecordAR+PhotoRender.swift */; };
-		7466B4802D68962D1F967A669527D1EF /* Generate+LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A1D553034CA5D346E862905AA8DAA /* Generate+LivePhoto.swift */; };
-		75BB033DA0BC5A8ADB50FE4C8C0E716A /* Generate+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A17F476DA89060AA32120D04CB79F /* Generate+GIF.swift */; };
-		77D349B308C5910B84BA41ABDCEB5FE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */; };
-		77D3DAC2CD4D46379F08CD39F69B451D /* LTMorphingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 478C60DBCA2DF5B0C09D3DC59DA387BF /* LTMorphingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BB36648630833A6D3384593CC4459C9 /* ARVideoKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1309BE0F43576A46D9183990127741 /* ARVideoKit-dummy.m */; };
-		80417950C455A1223A265666753CDF59 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF12166156223A1AE7E1A6A80E89F17 /* Fragment.png */; };
-		8053DBF940CDB20ECE5B27EA790B0CF0 /* ARVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C22E9A351A6E537C2177117A8A279D3 /* ARVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8158400300FB97D3C606B2C195538F8D /* ViewAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0394E13A2C4FA5B6794C868C72ED790 /* ViewAR.swift */; };
-		83947E623EC334F386C8CD9865AE8899 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DD4395D983F2A2E410F3F9F429EBF5 /* LTCharacterLimbo.swift */; };
-		9092585C5596078DB4841E639C4A0C00 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9ACFCFA80DD30DE3A8B9EBF7AF56CE /* LTMorphingEffect.swift */; };
-		93F17B9BFC168DAA500021F40C4BE08C /* QuickTimeMov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBAB52757603B6473FB16D7A92C1C9 /* QuickTimeMov.swift */; };
-		9D39D0E62CFA74CBA866706066D83F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */; };
-		ACB658B6D9490E0FDDC04E0327064A83 /* Pods-PortraitToRealityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */; };
-		ADA094D3BFDF8E0A57AD854D27AEE3A0 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47DC87EC380A91916EC321CACD252D /* ARView.swift */; };
-		ADFD6E3854DA0C5738074605AE6D99E7 /* UIView+isType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9780F4A5B90439CD3A26200A9E0EAA /* UIView+isType.swift */; };
-		AFB4C9CFBE0340B5B8477F836DBBB8AD /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB32D69B725655616D4CAE25A0E6EE1 /* LTEasing.swift */; };
-		AFC158F2C916C6F85124DE24874E8060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E83663F81FCB07BBAA408574FF05126 /* QuartzCore.framework */; };
-		B16245FC47744FAEDD0AD02B0BABAB08 /* Pods-PortraitToReality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B26670D4288F3BAEAEBA4DCA494B8011 /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EF2BD550C378C40A1D4558EC9846B3 /* LTMorphingLabel-dummy.m */; };
-		B6083B1709A63279F409CC9C3028DD44 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6D25F6803AA10B93B00623E988676 /* LTMorphingLabel+Anvil.swift */; };
-		BA6C585E59F8A2C8C24DE47C2254BAE7 /* Pods-PortraitToRealityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C704B8A04C0D7F17E8201D3642C607C5 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B367335E1B26085D1FAC7E6F3E5C734 /* Sparkle.png */; };
-		C84AC833FDDFF634687537B187F2C982 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = F77C0F30DE772AB83B98705D9D93BBF7 /* Smoke.png */; };
-		C878F1359E49BD397D9190AB1EC03749 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9F3B9D720B70558C0AD06487F6057 /* LTMorphingLabel+Evaporate.swift */; };
-		CF5A5A25CE83FAD83DD3E4624889DE11 /* ARInputViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD18EA536D1ACAFDAC0ED8A90BE6FB7 /* ARInputViewOptions.swift */; };
-		D396368F851E5E4F829387FF531466A2 /* Pods-PortraitToReality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */; };
-		D4603C35CBA5036FBD4E08AAEDAC2BC4 /* UIViewController+hasType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561A838AD5E125E6AE326900141F0D /* UIViewController+hasType.swift */; };
-		D98C6722D6F5A08554ECD3F1F032DA98 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713AA46AC8B5231DF047291BC5CC0AA /* LTMorphingLabel.swift */; };
-		D9F31D313E39AD03850BA27FF69DE2B2 /* UIImage+VideoBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3CE7C42A0EDBD794822D20F55087E /* UIImage+VideoBuffer.swift */; };
-		E029E86F9A49C498BB987E57149EA774 /* WritAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EACB52BB213F3CEEA340749922DDFC /* WritAR.swift */; };
-		E4F2B0C269DDDFB304CE3E53BA7E26FA /* RecordAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11BD995914252F5D719351DB65D7D7 /* RecordAR.swift */; };
-		E80F072960BBB98D5C1C0A355DF23CC4 /* ARVideoKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD27DB8D8C3A768D067F716BB4C6293F /* ARVideoKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC9CE20B1EE47E89D7EB1BE2643B3A56 /* PHLivePhotoPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A23B4CF7EC648EE48C2A7D88458100 /* PHLivePhotoPlus.swift */; };
-		FD6B570899C21F13D6314A72E92830C3 /* LTMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFA58DBA4C8443EA971D9FA926576D5 /* LTMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C39FECDCAD9DA845B9C611DB2EDCF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		0F827AC7BD2A5CDA1B683D52DC6D9CCF /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418F392A1D98A3F02BC22E7D1C32EF9 /* LTEmitterView.swift */; };
+		0FF0557E3E234A55BB3046068677E0AD /* Pods-PortraitToReality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58291D9E8464DBA44AB044B37B20D736 /* Pods-PortraitToReality-dummy.m */; };
+		177C97D6CD2BF0D7CF69CF1B89A22153 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		34F3BF2072270851B72843768EBECB59 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F62E5919DA45F08BFDAC7301C2D06E8 /* LTMorphingLabel.swift */; };
+		41383A54AC4C15B59C98C6EAD6AE54BF /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E40A6B120DF976CEB364E5F439C9CF18 /* LTMorphingLabel-dummy.m */; };
+		52A6FE0F1BD4FDA76D4AD445DD324EFD /* Pods-PortraitToReality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D5D157FBCF29F4A38D8A0B92DCFE3B /* Pods-PortraitToReality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58785A307922D8513DD099B8B1E3803C /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2328A31C73378F895B5FC925DC5CC77 /* LTMorphingEffect.swift */; };
+		61DDCE55C993047883CBC85B16F22B96 /* Pods-PortraitToRealityUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C336C22A57E1533BFFA558A7A8DB2765 /* Pods-PortraitToRealityUITests-dummy.m */; };
+		6637B1DAF6D424D039F2DB3CE741D2F3 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A0010C525233FE37D52594ADF170F2 /* Sparkle.png */; };
+		6869E0B5F87177AEF3B95C175884FC72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */; };
+		838368B56A03B3F57E2CBC0613673869 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E48FBCD6E2684765D80DCE4F3585120 /* Pods-PortraitToRealityUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B0F14EE44CDC048D91330147F96B4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */; };
+		86867D8E99691262F784AE24A7D953B6 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442858679235CC03600B3531FAF91EFE /* LTMorphingLabel+Anvil.swift */; };
+		A4C7AD5D5D0A9408D55B98A7CEB287DA /* Pods-PortraitToRealityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1C931717BF5BAFE1425996C0FDF78F /* Pods-PortraitToRealityTests-dummy.m */; };
+		AAF92F7ED3197B5AF7647AA739753683 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB089FEC347555B62180F28B1085819 /* Fragment.png */; };
+		AB4E20FF2BF733B12705BF8BB9C59338 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		B2008DD6915E291532A1CBEBE92039CE /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987672CF496B0E1320EDBD254F9A5A1F /* LTMorphingLabel+Burn.swift */; };
+		B351A6FBFE08F5C15FD5F9D853250CFD /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DC47F9BFAFDA53CA54D35FCDE7805F /* LTCharacterDiffResult.swift */; };
+		B51825EC515B623CA44A1E3D3C61188B /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873457067282F45BE8067F7989BE87B0 /* LTEasing.swift */; };
+		B70823D221A44099F34E737C07B235E8 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7CA71BB57310ACB1271F0D9C4A01AC /* LTMorphingLabel+Sparkle.swift */; };
+		C08AD5F102DBC800719CB340FB22B7F1 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDCF8690CF3C9C61F01EDE1040D1495 /* Fire.png */; };
+		C3459CE11CCFB813281DA209E4B1AE1C /* Pods-PortraitToRealityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B2009152C2DDA93C0ED4C1D4C4B753 /* Pods-PortraitToRealityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB59B5B8F6AFA347A7B09771B5244A36 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4FDE5A23306DE89C5716EBB2F42DB /* LTMorphingLabel+Pixelate.swift */; };
+		CBD64C27D9D7929F7CA4952D37A1A77F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		D7EC76C888837C2244145DDA750D5313 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF99903CE60A25F906A756E0F2C4F22 /* LTMorphingLabel+Evaporate.swift */; };
+		E332A090BABBFD027DBF3C1DAE99FDE8 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B97C55C9DFBE733761987B120C45 /* LTCharacterLimbo.swift */; };
+		E99149D5F39340E4D3B16F0EF68A30A1 /* LTMorphingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1179DE5C18568E949BF43A8B6DA8DC19 /* LTMorphingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDBC53BE7010EEF5DD0280629AF12990 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E01B7D55364A0B960587E8EF5C9E2 /* LTMorphingLabel+Fall.swift */; };
+		EEFBF83E1E8F59C680CF96D3C32B4F31 /* LTMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 01525C79AC221055DE01247DD4D28082 /* LTMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC834C03536DDFF1ADAE5F8ADDE33A81 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F2EBFE1C521EFE1A50C0B11F2A174C /* Smoke.png */; };
+		FEA6E7FADADB27B9004A3BA86FC20EC8 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D85952753D99E72955AED554DF5F3 /* LTStringDiffResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36F5B97FF36855A1698A0CC30C2C302F /* PBXContainerItemProxy */ = {
+		2A0502A2B82A713851F6575342F9D38E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D73C00F957192790EB7CA81FC84A3F26;
-			remoteInfo = ARVideoKit;
-		};
-		9F06FA22DD013972FD0EFB4A520A4173 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D60FE586D4FEE5BABE97B806797491C;
+			remoteGlobalIDString = 7876D46FD39C3A1F4C0F457125635F7F;
 			remoteInfo = "Pods-PortraitToReality";
 		};
-		D47ABABB71F9536333C59E1491CD4FF7 /* PBXContainerItemProxy */ = {
+		45878073FBE19A3414B2AE4EBE397DFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D60FE586D4FEE5BABE97B806797491C;
-			remoteInfo = "Pods-PortraitToReality";
-		};
-		DA7C875DD7ECF79BC0A0C1FC4984E0C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9D0F27BDB1B412F397EC2EF4645CB03;
+			remoteGlobalIDString = BE08E97E291135F1A7FAF0D9D680D2BF;
 			remoteInfo = LTMorphingLabel;
+		};
+		53314BD6319E6C62104394BCAB5A2351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7876D46FD39C3A1F4C0F457125635F7F;
+			remoteInfo = "Pods-PortraitToReality";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0CFA58DBA4C8443EA971D9FA926576D5 /* LTMorphingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
-		121A308ECC53A3D1A3EEBD3ED42E437E /* Pods-PortraitToRealityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		176EB3B4E15A7D69283C0E35D8345275 /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
-		19908B7534855A9D2CE96B725771F9B8 /* ARVideoOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARVideoOptions.swift; path = ARVideoKit/Enumerations/ARVideoOptions.swift; sourceTree = "<group>"; };
-		1BB32D69B725655616D4CAE25A0E6EE1 /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
-		1DA8CD1CEC74064CA10A6E0A06361DCC /* Pods-PortraitToReality-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-Info.plist"; sourceTree = "<group>"; };
-		2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityUITests-dummy.m"; sourceTree = "<group>"; };
-		23757001D69886D1303A602B393F88E2 /* Pods-PortraitToRealityTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-Info.plist"; sourceTree = "<group>"; };
-		25EACB52BB213F3CEEA340749922DDFC /* WritAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WritAR.swift; path = ARVideoKit/Rendering/Writer/WritAR.swift; sourceTree = "<group>"; };
-		27252C48242C610EB3AF5CB135F5E3E7 /* Pods-PortraitToReality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PortraitToReality-frameworks.sh"; sourceTree = "<group>"; };
-		29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToReality-dummy.m"; sourceTree = "<group>"; };
-		33E0B9CD45D82BC1F10FDEF3EDE9FD4E /* RecordARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordARDelegate.swift; path = ARVideoKit/Protocols/RecordARDelegate.swift; sourceTree = "<group>"; };
-		341F423F6C839F0E2732461BF4338512 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
-		35F5C77437ECF16837BF070F77C579B3 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
-		3713AA46AC8B5231DF047291BC5CC0AA /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
-		37A23B4CF7EC648EE48C2A7D88458100 /* PHLivePhotoPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHLivePhotoPlus.swift; path = "ARVideoKit/Rendering/Live Photo/PHLivePhotoPlus.swift"; sourceTree = "<group>"; };
-		37B78B35B23CB5A850BA50F705E2A56C /* ARVideoKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARVideoKit.xcconfig; sourceTree = "<group>"; };
-		38F6D25F6803AA10B93B00623E988676 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
-		3E83663F81FCB07BBAA408574FF05126 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3F9ACFCFA80DD30DE3A8B9EBF7AF56CE /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
-		4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityTests-umbrella.h"; sourceTree = "<group>"; };
-		478C60DBCA2DF5B0C09D3DC59DA387BF /* LTMorphingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-umbrella.h"; sourceTree = "<group>"; };
-		4E665D9309FD82F76231719A0639FCC7 /* LTStringDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTStringDiffResult.swift; path = LTMorphingLabel/LTStringDiffResult.swift; sourceTree = "<group>"; };
-		4EF255376244CB6CF283D0A391A080B7 /* video.scnassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.scnassets; name = video.scnassets; path = ARVideoKit/Assets/video.scnassets; sourceTree = "<group>"; };
-		4F11BD995914252F5D719351DB65D7D7 /* RecordAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordAR.swift; path = ARVideoKit/Sources/RecordAR.swift; sourceTree = "<group>"; };
-		532C6B19CD903DFA674797D982AAC6CA /* Pods-PortraitToRealityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityTests.modulemap"; sourceTree = "<group>"; };
-		55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		570A1D553034CA5D346E862905AA8DAA /* Generate+LivePhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+LivePhoto.swift"; path = "ARVideoKit/Rendering/Live Photo/Generate+LivePhoto.swift"; sourceTree = "<group>"; };
-		5D123EB9F312E2D0A2E79A5547E6CA53 /* Pods-PortraitToRealityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		65FDB30DC272FBE209406A33536CB3A2 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
-		674BEEDD186AE3FBBA252FAD93DA4DAD /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF12166156223A1AE7E1A6A80E89F17 /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
-		6C19D5A146F48CEFAE6EFB8B178607E5 /* Pods-PortraitToRealityUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-Info.plist"; sourceTree = "<group>"; };
-		71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.release.xcconfig"; sourceTree = "<group>"; };
-		71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToReality-umbrella.h"; sourceTree = "<group>"; };
-		73DD4395D983F2A2E410F3F9F429EBF5 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
-		77D5413EF1A9494A6EAED7F9D93D5C68 /* ARVideoKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARVideoKit.modulemap; sourceTree = "<group>"; };
-		7AB34AFBF77548E30ADDF8393909656A /* Pods-PortraitToRealityUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7B367335E1B26085D1FAC7E6F3E5C734 /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
-		7CD18EA536D1ACAFDAC0ED8A90BE6FB7 /* ARInputViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARInputViewOptions.swift; path = ARVideoKit/Enumerations/ARInputViewOptions.swift; sourceTree = "<group>"; };
-		83EBAB52757603B6473FB16D7A92C1C9 /* QuickTimeMov.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTimeMov.swift; path = "ARVideoKit/Rendering/Live Photo/QuickTimeMov.swift"; sourceTree = "<group>"; };
-		8C22E9A351A6E537C2177117A8A279D3 /* ARVideoKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARVideoKit.h; path = ARVideoKit/ARVideoKit.h; sourceTree = "<group>"; };
-		980C641DBD31223566994945FF8E2A22 /* ARVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9975F11BE3EDD8AD2E3C5F68750D4456 /* RenderARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderARDelegate.swift; path = ARVideoKit/Protocols/RenderARDelegate.swift; sourceTree = "<group>"; };
-		9BFBA3E3C13C853287A799D59FF75090 /* Pods-PortraitToReality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToReality-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9CC6292E9F4F5BF6E801FFB211AB8EC2 /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
-		9D8BE828280A8269B8F3079F4CBA52C5 /* LTMorphingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.debug.xcconfig"; sourceTree = "<group>"; };
-		9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A020636CD74B5CCC5680F2ACC4DA5A1D /* ARVideoKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARVideoKit-Info.plist"; sourceTree = "<group>"; };
-		A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A4AADFEF6ED5B182B4B66752763F2B23 /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
-		A4ACA2A6486C9A29407D456B3A333076 /* Pods-PortraitToReality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-acknowledgements.plist"; sourceTree = "<group>"; };
-		A57B445DD3C09A2B5DAE5EB20BDFA45D /* Pods_PortraitToRealityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63C3E8DEB5650DF5C8DEF75DE07EAA9 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
-		A693F76A9D0F059ABFA5F43F9D6EAAE2 /* RecordAR+PhotoRender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RecordAR+PhotoRender.swift"; path = "ARVideoKit/Extensions/RecordAR+PhotoRender.swift"; sourceTree = "<group>"; };
-		AA4F0F3A013F43607FC1CECB0E220A13 /* Pods_PortraitToReality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToReality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFD59E834D939422EF62D55518B3CDCB /* LTMorphingLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LTMorphingLabel-Info.plist"; sourceTree = "<group>"; };
-		B23E6659060337F19196726F1CEA06A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B4EF2BD550C378C40A1D4558EC9846B3 /* LTMorphingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTMorphingLabel-dummy.m"; sourceTree = "<group>"; };
-		B7924A272D6DB98BA78C13D3F7637D13 /* LTMorphingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.xcconfig; sourceTree = "<group>"; };
-		B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityUITests-umbrella.h"; sourceTree = "<group>"; };
-		BB790065509E917B3BC0B9656384471B /* CGImage+Resize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Resize.swift"; path = "ARVideoKit/Extensions/CGImage+Resize.swift"; sourceTree = "<group>"; };
-		BCA80314A920D30A4A5B6277AE1AD58B /* JPEG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JPEG.swift; path = "ARVideoKit/Rendering/Live Photo/JPEG.swift"; sourceTree = "<group>"; };
-		BF3D4ABF671333A2A78FA14F852F2BB9 /* Pods_PortraitToRealityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitToRealityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C46D880156FD9FB07A38BC215F5DF8B2 /* ARVideoKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-prefix.pch"; sourceTree = "<group>"; };
-		CD561A838AD5E125E6AE326900141F0D /* UIViewController+hasType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+hasType.swift"; path = "ARVideoKit/Extensions/UIViewController+hasType.swift"; sourceTree = "<group>"; };
-		CF9780F4A5B90439CD3A26200A9E0EAA /* UIView+isType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+isType.swift"; path = "ARVideoKit/Extensions/UIView+isType.swift"; sourceTree = "<group>"; };
-		D0394E13A2C4FA5B6794C868C72ED790 /* ViewAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAR.swift; path = ARVideoKit/Sources/ViewAR.swift; sourceTree = "<group>"; };
-		D58E7FEA6874A383B1B2E06CC5FC13C7 /* RenderAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderAR.swift; path = ARVideoKit/Rendering/RenderAR.swift; sourceTree = "<group>"; };
-		DCF3CE7C42A0EDBD794822D20F55087E /* UIImage+VideoBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+VideoBuffer.swift"; path = "ARVideoKit/Extensions/UIImage+VideoBuffer.swift"; sourceTree = "<group>"; };
-		DD27DB8D8C3A768D067F716BB4C6293F /* ARVideoKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-umbrella.h"; sourceTree = "<group>"; };
-		E0B378B60D13892782043F881FCC501B /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
-		E1A639C46E9B2AD6C454A17DD2509FC4 /* Pods-PortraitToRealityUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E34A17F476DA89060AA32120D04CB79F /* Generate+GIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+GIF.swift"; path = "ARVideoKit/Rendering/GIF/Generate+GIF.swift"; sourceTree = "<group>"; };
-		E665CA1EFE4FDA64CFC6505CA673FF89 /* Pods-PortraitToReality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToReality.modulemap"; sourceTree = "<group>"; };
-		E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.release.xcconfig"; sourceTree = "<group>"; };
-		EB1309BE0F43576A46D9183990127741 /* ARVideoKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARVideoKit-dummy.m"; sourceTree = "<group>"; };
-		EB47DC87EC380A91916EC321CACD252D /* ARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARView.swift; path = ARVideoKit/Sources/ARView.swift; sourceTree = "<group>"; };
-		F1A9F3B9D720B70558C0AD06487F6057 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
-		F77C0F30DE772AB83B98705D9D93BBF7 /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
-		FA6F98B34EBF49B21BF5C80E1CFE7CE6 /* Pods-PortraitToRealityUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityUITests.modulemap"; sourceTree = "<group>"; };
-		FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityTests-dummy.m"; sourceTree = "<group>"; };
+		01525C79AC221055DE01247DD4D28082 /* LTMorphingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
+		0A6D85952753D99E72955AED554DF5F3 /* LTStringDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTStringDiffResult.swift; path = LTMorphingLabel/LTStringDiffResult.swift; sourceTree = "<group>"; };
+		0E48FBCD6E2684765D80DCE4F3585120 /* Pods-PortraitToRealityUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityUITests-umbrella.h"; sourceTree = "<group>"; };
+		1179DE5C18568E949BF43A8B6DA8DC19 /* LTMorphingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-umbrella.h"; sourceTree = "<group>"; };
+		13D410B0C2EAFED69339A82CFD0595D1 /* Pods-PortraitToRealityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTMorphingLabel.framework; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21054AA47CC46DFC5ADED5112E722BE1 /* Pods-PortraitToRealityUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-Info.plist"; sourceTree = "<group>"; };
+		21F9342E9FD6829FC621E969EC24A0DC /* Pods-PortraitToRealityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2418F392A1D98A3F02BC22E7D1C32EF9 /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		2F62E5919DA45F08BFDAC7301C2D06E8 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		3C2C1D776727F6AA48754D315EFA2A53 /* Pods_PortraitToReality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PortraitToReality.framework; path = "Pods-PortraitToReality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB92F3C647C88305213FAC6880E738A /* Pods-PortraitToRealityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9F0D1E476497FF2AFAB140533C525B /* Pods-PortraitToReality-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-Info.plist"; sourceTree = "<group>"; };
+		41559C53EC60A6617B7F89BFCC551F3F /* Pods-PortraitToReality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.release.xcconfig"; sourceTree = "<group>"; };
+		442858679235CC03600B3531FAF91EFE /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		45D5D157FBCF29F4A38D8A0B92DCFE3B /* Pods-PortraitToReality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToReality-umbrella.h"; sourceTree = "<group>"; };
+		49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A0D1482FB654A76F11262F02BF29B93 /* Pods-PortraitToRealityTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityTests-Info.plist"; sourceTree = "<group>"; };
+		51DC47F9BFAFDA53CA54D35FCDE7805F /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		58291D9E8464DBA44AB044B37B20D736 /* Pods-PortraitToReality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToReality-dummy.m"; sourceTree = "<group>"; };
+		6022896616A79C678A8C7D08C8BC7DD1 /* Pods-PortraitToReality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToReality.debug.xcconfig"; sourceTree = "<group>"; };
+		628A7D698652BCA84ABE05807A0E5A28 /* Pods-PortraitToRealityUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToRealityUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BDCF8690CF3C9C61F01EDE1040D1495 /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
+		6D7CA71BB57310ACB1271F0D9C4A01AC /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		74016D8F0E0502E143C85839870BDF79 /* LTMorphingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.xcconfig; sourceTree = "<group>"; };
+		74E05EA8213C728839FADC35A5D039DC /* LTMorphingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-prefix.pch"; sourceTree = "<group>"; };
+		786E01B7D55364A0B960587E8EF5C9E2 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		795CC9B2AAF8646CB254B3BDD08C9945 /* Pods-PortraitToReality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToReality.modulemap"; sourceTree = "<group>"; };
+		7FFB60B7951BDAC9EB8AC7795819D675 /* Pods_PortraitToRealityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PortraitToRealityTests.framework; path = "Pods-PortraitToRealityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		873457067282F45BE8067F7989BE87B0 /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		8DB089FEC347555B62180F28B1085819 /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
+		8EF99903CE60A25F906A756E0F2C4F22 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		927AD79E373A586E700C9648BD773666 /* Pods-PortraitToRealityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityTests.modulemap"; sourceTree = "<group>"; };
+		950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		95C86B90A095426BE8086A77451F6BC5 /* Pods-PortraitToRealityUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		987672CF496B0E1320EDBD254F9A5A1F /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4A0010C525233FE37D52594ADF170F2 /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
+		AE1C931717BF5BAFE1425996C0FDF78F /* Pods-PortraitToRealityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityTests-dummy.m"; sourceTree = "<group>"; };
+		B0B2009152C2DDA93C0ED4C1D4C4B753 /* Pods-PortraitToRealityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PortraitToRealityTests-umbrella.h"; sourceTree = "<group>"; };
+		B1F2EBFE1C521EFE1A50C0B11F2A174C /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
+		B1FC8BE5E6055F5D91AAD0D354AA30B4 /* Pods-PortraitToRealityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6E52F864BCA5B2FDB280C9DF16836F8 /* Pods-PortraitToReality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PortraitToReality-frameworks.sh"; sourceTree = "<group>"; };
+		C336C22A57E1533BFFA558A7A8DB2765 /* Pods-PortraitToRealityUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PortraitToRealityUITests-dummy.m"; sourceTree = "<group>"; };
+		C57BB1D1A40DFFD88833CFD798911738 /* Pods-PortraitToReality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToReality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5E8F18A895853BED2A3A93B5E3F0D8C /* Pods-PortraitToRealityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PortraitToRealityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8AD4E3F9A27E6BD54F5996950E3F24 /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
+		CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D613778DE2DC7BE5548134FD7AADB62F /* Pods_PortraitToRealityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PortraitToRealityUITests.framework; path = "Pods-PortraitToRealityUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA4FDE5A23306DE89C5716EBB2F42DB /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		E17985CF7E61B0415BE11CEB0B4E2A5D /* Pods-PortraitToRealityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PortraitToRealityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2328A31C73378F895B5FC925DC5CC77 /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		E40A6B120DF976CEB364E5F439C9CF18 /* LTMorphingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTMorphingLabel-dummy.m"; sourceTree = "<group>"; };
+		E730889452771908407BC113CB4F68AF /* Pods-PortraitToRealityUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PortraitToRealityUITests.modulemap"; sourceTree = "<group>"; };
+		E7E4B97C55C9DFBE733761987B120C45 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		FDC477F3817472E38A78526D93EE0CBA /* Pods-PortraitToReality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PortraitToReality-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF2ED9D05507D083B7E59B4793D9258B /* LTMorphingLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LTMorphingLabel-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		081283A743AE753883BB94D1062C3DE8 /* Frameworks */ = {
+		2EC582D39344DF47D9B3AB4319DB5B3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33788188B4BE00B818D840EE13A8C530 /* Foundation.framework in Frameworks */,
+				177C97D6CD2BF0D7CF69CF1B89A22153 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		752A58C0307D2D4502DF5687436EB1E9 /* Frameworks */ = {
+		3113549ACB11C630509D19B9E9555E1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D39D0E62CFA74CBA866706066D83F2C /* Foundation.framework in Frameworks */,
+				0C39FECDCAD9DA845B9C611DB2EDCF75 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		926B280046574D3401421E3BACE69D09 /* Frameworks */ = {
+		47C063308C50B0230EDE5B7E289BD464 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D349B308C5910B84BA41ABDCEB5FE3 /* Foundation.framework in Frameworks */,
-				AFC158F2C916C6F85124DE24874E8060 /* QuartzCore.framework in Frameworks */,
-				5CE239B33636C9E6B020122BB9B72133 /* UIKit.framework in Frameworks */,
+				AB4E20FF2BF733B12705BF8BB9C59338 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5E9BC98FDDB7538D58789FF76952B72 /* Frameworks */ = {
+		580B1A27F7E1401C9D8294461B757383 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185608193FE76FE74E424C80D5963704 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8A13B2918D0DAE4FF8DB2BF290D5E44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CD36E7DAA36CE195C3AA7D1DC59FB6D /* Foundation.framework in Frameworks */,
+				CBD64C27D9D7929F7CA4952D37A1A77F /* Foundation.framework in Frameworks */,
+				6869E0B5F87177AEF3B95C175884FC72 /* QuartzCore.framework in Frameworks */,
+				85B0F14EE44CDC048D91330147F96B4F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,169 +166,136 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD766BFEDD0FE46FD0AF278EAE74102F /* iOS */,
+				C18BABFF9523A33465B5A91496FF0C3D /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		35F2FF33777ABF480275AB0DD10F611F /* Resources */ = {
+		1363E3BACE869C143C44EFF9111C6C47 /* Pods-PortraitToRealityUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4EF255376244CB6CF283D0A391A080B7 /* video.scnassets */,
+				E730889452771908407BC113CB4F68AF /* Pods-PortraitToRealityUITests.modulemap */,
+				95C86B90A095426BE8086A77451F6BC5 /* Pods-PortraitToRealityUITests-acknowledgements.markdown */,
+				628A7D698652BCA84ABE05807A0E5A28 /* Pods-PortraitToRealityUITests-acknowledgements.plist */,
+				C336C22A57E1533BFFA558A7A8DB2765 /* Pods-PortraitToRealityUITests-dummy.m */,
+				21054AA47CC46DFC5ADED5112E722BE1 /* Pods-PortraitToRealityUITests-Info.plist */,
+				0E48FBCD6E2684765D80DCE4F3585120 /* Pods-PortraitToRealityUITests-umbrella.h */,
+				3CB92F3C647C88305213FAC6880E738A /* Pods-PortraitToRealityUITests.debug.xcconfig */,
+				13D410B0C2EAFED69339A82CFD0595D1 /* Pods-PortraitToRealityUITests.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Pods-PortraitToRealityUITests";
+			path = "Target Support Files/Pods-PortraitToRealityUITests";
 			sourceTree = "<group>";
 		};
-		407E58AD5D5FA7DA8F603E8753FF72F0 /* Products */ = {
+		1D05545E1C18A68DF56C76629CE2BCC7 /* Pods-PortraitToRealityTests */ = {
 			isa = PBXGroup;
 			children = (
-				980C641DBD31223566994945FF8E2A22 /* ARVideoKit.framework */,
-				674BEEDD186AE3FBBA252FAD93DA4DAD /* LTMorphingLabel.framework */,
-				AA4F0F3A013F43607FC1CECB0E220A13 /* Pods_PortraitToReality.framework */,
-				A57B445DD3C09A2B5DAE5EB20BDFA45D /* Pods_PortraitToRealityTests.framework */,
-				BF3D4ABF671333A2A78FA14F852F2BB9 /* Pods_PortraitToRealityUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4431C8344C10A741988C2A64D4F50AC9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				77D5413EF1A9494A6EAED7F9D93D5C68 /* ARVideoKit.modulemap */,
-				37B78B35B23CB5A850BA50F705E2A56C /* ARVideoKit.xcconfig */,
-				EB1309BE0F43576A46D9183990127741 /* ARVideoKit-dummy.m */,
-				A020636CD74B5CCC5680F2ACC4DA5A1D /* ARVideoKit-Info.plist */,
-				C46D880156FD9FB07A38BC215F5DF8B2 /* ARVideoKit-prefix.pch */,
-				DD27DB8D8C3A768D067F716BB4C6293F /* ARVideoKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ARVideoKit";
-			sourceTree = "<group>";
-		};
-		4B5E15F9885B8C969776298609681BF9 /* Pods-PortraitToReality */ = {
-			isa = PBXGroup;
-			children = (
-				E665CA1EFE4FDA64CFC6505CA673FF89 /* Pods-PortraitToReality.modulemap */,
-				9BFBA3E3C13C853287A799D59FF75090 /* Pods-PortraitToReality-acknowledgements.markdown */,
-				A4ACA2A6486C9A29407D456B3A333076 /* Pods-PortraitToReality-acknowledgements.plist */,
-				29D388E0C79AE10F733187FC3EED4158 /* Pods-PortraitToReality-dummy.m */,
-				27252C48242C610EB3AF5CB135F5E3E7 /* Pods-PortraitToReality-frameworks.sh */,
-				1DA8CD1CEC74064CA10A6E0A06361DCC /* Pods-PortraitToReality-Info.plist */,
-				71CF35DF8BAF63847657ADC35E314D7A /* Pods-PortraitToReality-umbrella.h */,
-				9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */,
-				E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */,
-			);
-			name = "Pods-PortraitToReality";
-			path = "Target Support Files/Pods-PortraitToReality";
-			sourceTree = "<group>";
-		};
-		4F1AD21EB5D4369EA0DC68C744CD7C39 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4B5E15F9885B8C969776298609681BF9 /* Pods-PortraitToReality */,
-				533ECDA5D00F052E7B5E92DCB1F2FC5B /* Pods-PortraitToRealityTests */,
-				DE5A4C4B93F0BFB178668D257BEFAAF8 /* Pods-PortraitToRealityUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		533ECDA5D00F052E7B5E92DCB1F2FC5B /* Pods-PortraitToRealityTests */ = {
-			isa = PBXGroup;
-			children = (
-				532C6B19CD903DFA674797D982AAC6CA /* Pods-PortraitToRealityTests.modulemap */,
-				5D123EB9F312E2D0A2E79A5547E6CA53 /* Pods-PortraitToRealityTests-acknowledgements.markdown */,
-				121A308ECC53A3D1A3EEBD3ED42E437E /* Pods-PortraitToRealityTests-acknowledgements.plist */,
-				FD6C2F858FBF5BA28832D5FCA477262A /* Pods-PortraitToRealityTests-dummy.m */,
-				23757001D69886D1303A602B393F88E2 /* Pods-PortraitToRealityTests-Info.plist */,
-				4786C4CE0967E850316683027171671C /* Pods-PortraitToRealityTests-umbrella.h */,
-				9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */,
-				71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */,
+				927AD79E373A586E700C9648BD773666 /* Pods-PortraitToRealityTests.modulemap */,
+				E17985CF7E61B0415BE11CEB0B4E2A5D /* Pods-PortraitToRealityTests-acknowledgements.markdown */,
+				21F9342E9FD6829FC621E969EC24A0DC /* Pods-PortraitToRealityTests-acknowledgements.plist */,
+				AE1C931717BF5BAFE1425996C0FDF78F /* Pods-PortraitToRealityTests-dummy.m */,
+				4A0D1482FB654A76F11262F02BF29B93 /* Pods-PortraitToRealityTests-Info.plist */,
+				B0B2009152C2DDA93C0ED4C1D4C4B753 /* Pods-PortraitToRealityTests-umbrella.h */,
+				C5E8F18A895853BED2A3A93B5E3F0D8C /* Pods-PortraitToRealityTests.debug.xcconfig */,
+				B1FC8BE5E6055F5D91AAD0D354AA30B4 /* Pods-PortraitToRealityTests.release.xcconfig */,
 			);
 			name = "Pods-PortraitToRealityTests";
 			path = "Target Support Files/Pods-PortraitToRealityTests";
 			sourceTree = "<group>";
 		};
-		56B7CAE6CDEC3989513CA0AE0A24D5D6 /* Pods */ = {
+		26ADF1459EFD462AD353809080899F1C /* Pods-PortraitToReality */ = {
 			isa = PBXGroup;
 			children = (
-				C8AE71908D6AB1535992E696440A5617 /* ARVideoKit */,
-				BCB079A90964263604DE807A43ECC0B1 /* LTMorphingLabel */,
+				795CC9B2AAF8646CB254B3BDD08C9945 /* Pods-PortraitToReality.modulemap */,
+				C57BB1D1A40DFFD88833CFD798911738 /* Pods-PortraitToReality-acknowledgements.markdown */,
+				FDC477F3817472E38A78526D93EE0CBA /* Pods-PortraitToReality-acknowledgements.plist */,
+				58291D9E8464DBA44AB044B37B20D736 /* Pods-PortraitToReality-dummy.m */,
+				B6E52F864BCA5B2FDB280C9DF16836F8 /* Pods-PortraitToReality-frameworks.sh */,
+				3F9F0D1E476497FF2AFAB140533C525B /* Pods-PortraitToReality-Info.plist */,
+				45D5D157FBCF29F4A38D8A0B92DCFE3B /* Pods-PortraitToReality-umbrella.h */,
+				6022896616A79C678A8C7D08C8BC7DD1 /* Pods-PortraitToReality.debug.xcconfig */,
+				41559C53EC60A6617B7F89BFCC551F3F /* Pods-PortraitToReality.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Pods-PortraitToReality";
+			path = "Target Support Files/Pods-PortraitToReality";
 			sourceTree = "<group>";
 		};
-		7F9DEDEEF27312D975C0B9D4BB5625B3 /* Support Files */ = {
+		3CD8688828D0DCB20600AB346C40356B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				176EB3B4E15A7D69283C0E35D8345275 /* LTMorphingLabel.modulemap */,
-				B7924A272D6DB98BA78C13D3F7637D13 /* LTMorphingLabel.xcconfig */,
-				B4EF2BD550C378C40A1D4558EC9846B3 /* LTMorphingLabel-dummy.m */,
-				AFD59E834D939422EF62D55518B3CDCB /* LTMorphingLabel-Info.plist */,
-				9D8BE828280A8269B8F3079F4CBA52C5 /* LTMorphingLabel-prefix.pch */,
-				478C60DBCA2DF5B0C09D3DC59DA387BF /* LTMorphingLabel-umbrella.h */,
+				6BDCF8690CF3C9C61F01EDE1040D1495 /* Fire.png */,
+				8DB089FEC347555B62180F28B1085819 /* Fragment.png */,
+				B1F2EBFE1C521EFE1A50C0B11F2A174C /* Smoke.png */,
+				A4A0010C525233FE37D52594ADF170F2 /* Sparkle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4EDA11167C7D6EEB6242AE07B5421A92 /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				51DC47F9BFAFDA53CA54D35FCDE7805F /* LTCharacterDiffResult.swift */,
+				E7E4B97C55C9DFBE733761987B120C45 /* LTCharacterLimbo.swift */,
+				873457067282F45BE8067F7989BE87B0 /* LTEasing.swift */,
+				2418F392A1D98A3F02BC22E7D1C32EF9 /* LTEmitterView.swift */,
+				E2328A31C73378F895B5FC925DC5CC77 /* LTMorphingEffect.swift */,
+				01525C79AC221055DE01247DD4D28082 /* LTMorphingLabel.h */,
+				2F62E5919DA45F08BFDAC7301C2D06E8 /* LTMorphingLabel.swift */,
+				442858679235CC03600B3531FAF91EFE /* LTMorphingLabel+Anvil.swift */,
+				987672CF496B0E1320EDBD254F9A5A1F /* LTMorphingLabel+Burn.swift */,
+				8EF99903CE60A25F906A756E0F2C4F22 /* LTMorphingLabel+Evaporate.swift */,
+				786E01B7D55364A0B960587E8EF5C9E2 /* LTMorphingLabel+Fall.swift */,
+				DBA4FDE5A23306DE89C5716EBB2F42DB /* LTMorphingLabel+Pixelate.swift */,
+				6D7CA71BB57310ACB1271F0D9C4A01AC /* LTMorphingLabel+Sparkle.swift */,
+				0A6D85952753D99E72955AED554DF5F3 /* LTStringDiffResult.swift */,
+				3CD8688828D0DCB20600AB346C40356B /* Resources */,
+				58152A263C33B25DE0CC0F1986EFA92C /* Support Files */,
+			);
+			name = LTMorphingLabel;
+			path = LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+		4F1AD21EB5D4369EA0DC68C744CD7C39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26ADF1459EFD462AD353809080899F1C /* Pods-PortraitToReality */,
+				1D05545E1C18A68DF56C76629CE2BCC7 /* Pods-PortraitToRealityTests */,
+				1363E3BACE869C143C44EFF9111C6C47 /* Pods-PortraitToRealityUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58152A263C33B25DE0CC0F1986EFA92C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA8AD4E3F9A27E6BD54F5996950E3F24 /* LTMorphingLabel.modulemap */,
+				74016D8F0E0502E143C85839870BDF79 /* LTMorphingLabel.xcconfig */,
+				E40A6B120DF976CEB364E5F439C9CF18 /* LTMorphingLabel-dummy.m */,
+				FF2ED9D05507D083B7E59B4793D9258B /* LTMorphingLabel-Info.plist */,
+				74E05EA8213C728839FADC35A5D039DC /* LTMorphingLabel-prefix.pch */,
+				1179DE5C18568E949BF43A8B6DA8DC19 /* LTMorphingLabel-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LTMorphingLabel";
 			sourceTree = "<group>";
 		};
-		BCB079A90964263604DE807A43ECC0B1 /* LTMorphingLabel */ = {
+		8CEB34ABE4FE2335040131400BCE7A31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A63C3E8DEB5650DF5C8DEF75DE07EAA9 /* LTCharacterDiffResult.swift */,
-				73DD4395D983F2A2E410F3F9F429EBF5 /* LTCharacterLimbo.swift */,
-				1BB32D69B725655616D4CAE25A0E6EE1 /* LTEasing.swift */,
-				9CC6292E9F4F5BF6E801FFB211AB8EC2 /* LTEmitterView.swift */,
-				3F9ACFCFA80DD30DE3A8B9EBF7AF56CE /* LTMorphingEffect.swift */,
-				0CFA58DBA4C8443EA971D9FA926576D5 /* LTMorphingLabel.h */,
-				3713AA46AC8B5231DF047291BC5CC0AA /* LTMorphingLabel.swift */,
-				38F6D25F6803AA10B93B00623E988676 /* LTMorphingLabel+Anvil.swift */,
-				65FDB30DC272FBE209406A33536CB3A2 /* LTMorphingLabel+Burn.swift */,
-				F1A9F3B9D720B70558C0AD06487F6057 /* LTMorphingLabel+Evaporate.swift */,
-				E0B378B60D13892782043F881FCC501B /* LTMorphingLabel+Fall.swift */,
-				35F5C77437ECF16837BF070F77C579B3 /* LTMorphingLabel+Pixelate.swift */,
-				341F423F6C839F0E2732461BF4338512 /* LTMorphingLabel+Sparkle.swift */,
-				4E665D9309FD82F76231719A0639FCC7 /* LTStringDiffResult.swift */,
-				E3A787BECBA3BB6B0CB0FC74066F71D7 /* Resources */,
-				7F9DEDEEF27312D975C0B9D4BB5625B3 /* Support Files */,
+				1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel.framework */,
+				3C2C1D776727F6AA48754D315EFA2A53 /* Pods_PortraitToReality.framework */,
+				7FFB60B7951BDAC9EB8AC7795819D675 /* Pods_PortraitToRealityTests.framework */,
+				D613778DE2DC7BE5548134FD7AADB62F /* Pods_PortraitToRealityUITests.framework */,
 			);
-			path = LTMorphingLabel;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		C8AE71908D6AB1535992E696440A5617 /* ARVideoKit */ = {
+		C18BABFF9523A33465B5A91496FF0C3D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7CD18EA536D1ACAFDAC0ED8A90BE6FB7 /* ARInputViewOptions.swift */,
-				8C22E9A351A6E537C2177117A8A279D3 /* ARVideoKit.h */,
-				19908B7534855A9D2CE96B725771F9B8 /* ARVideoOptions.swift */,
-				EB47DC87EC380A91916EC321CACD252D /* ARView.swift */,
-				BB790065509E917B3BC0B9656384471B /* CGImage+Resize.swift */,
-				E34A17F476DA89060AA32120D04CB79F /* Generate+GIF.swift */,
-				570A1D553034CA5D346E862905AA8DAA /* Generate+LivePhoto.swift */,
-				BCA80314A920D30A4A5B6277AE1AD58B /* JPEG.swift */,
-				37A23B4CF7EC648EE48C2A7D88458100 /* PHLivePhotoPlus.swift */,
-				83EBAB52757603B6473FB16D7A92C1C9 /* QuickTimeMov.swift */,
-				4F11BD995914252F5D719351DB65D7D7 /* RecordAR.swift */,
-				A693F76A9D0F059ABFA5F43F9D6EAAE2 /* RecordAR+PhotoRender.swift */,
-				33E0B9CD45D82BC1F10FDEF3EDE9FD4E /* RecordARDelegate.swift */,
-				D58E7FEA6874A383B1B2E06CC5FC13C7 /* RenderAR.swift */,
-				9975F11BE3EDD8AD2E3C5F68750D4456 /* RenderARDelegate.swift */,
-				DCF3CE7C42A0EDBD794822D20F55087E /* UIImage+VideoBuffer.swift */,
-				CF9780F4A5B90439CD3A26200A9E0EAA /* UIView+isType.swift */,
-				CD561A838AD5E125E6AE326900141F0D /* UIViewController+hasType.swift */,
-				D0394E13A2C4FA5B6794C868C72ED790 /* ViewAR.swift */,
-				25EACB52BB213F3CEEA340749922DDFC /* WritAR.swift */,
-				35F2FF33777ABF480275AB0DD10F611F /* Resources */,
-				4431C8344C10A741988C2A64D4F50AC9 /* Support Files */,
-			);
-			path = ARVideoKit;
-			sourceTree = "<group>";
-		};
-		CD766BFEDD0FE46FD0AF278EAE74102F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A0CD490842D1267AC36524009F7A9B2A /* Foundation.framework */,
-				3E83663F81FCB07BBAA408574FF05126 /* QuartzCore.framework */,
-				B23E6659060337F19196726F1CEA06A0 /* UIKit.framework */,
+				950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */,
+				CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */,
+				49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -405,152 +305,105 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				56B7CAE6CDEC3989513CA0AE0A24D5D6 /* Pods */,
-				407E58AD5D5FA7DA8F603E8753FF72F0 /* Products */,
+				EA427EB2995489DC497E654228FD819A /* Pods */,
+				8CEB34ABE4FE2335040131400BCE7A31 /* Products */,
 				4F1AD21EB5D4369EA0DC68C744CD7C39 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DE5A4C4B93F0BFB178668D257BEFAAF8 /* Pods-PortraitToRealityUITests */ = {
+		EA427EB2995489DC497E654228FD819A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F98B34EBF49B21BF5C80E1CFE7CE6 /* Pods-PortraitToRealityUITests.modulemap */,
-				7AB34AFBF77548E30ADDF8393909656A /* Pods-PortraitToRealityUITests-acknowledgements.markdown */,
-				E1A639C46E9B2AD6C454A17DD2509FC4 /* Pods-PortraitToRealityUITests-acknowledgements.plist */,
-				2308543E384467E332B4F617F322051D /* Pods-PortraitToRealityUITests-dummy.m */,
-				6C19D5A146F48CEFAE6EFB8B178607E5 /* Pods-PortraitToRealityUITests-Info.plist */,
-				B969D9ACF20F334B1D98FFC7C4341B31 /* Pods-PortraitToRealityUITests-umbrella.h */,
-				55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */,
-				088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */,
+				4EDA11167C7D6EEB6242AE07B5421A92 /* LTMorphingLabel */,
 			);
-			name = "Pods-PortraitToRealityUITests";
-			path = "Target Support Files/Pods-PortraitToRealityUITests";
-			sourceTree = "<group>";
-		};
-		E3A787BECBA3BB6B0CB0FC74066F71D7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A4AADFEF6ED5B182B4B66752763F2B23 /* Fire.png */,
-				6AF12166156223A1AE7E1A6A80E89F17 /* Fragment.png */,
-				F77C0F30DE772AB83B98705D9D93BBF7 /* Smoke.png */,
-				7B367335E1B26085D1FAC7E6F3E5C734 /* Sparkle.png */,
-			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18C0660E5686EEB0BFE8EE16F5126EA5 /* Headers */ = {
+		2DED18B40219953CACBB91BD6782270A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D3DAC2CD4D46379F08CD39F69B451D /* LTMorphingLabel-umbrella.h in Headers */,
-				FD6B570899C21F13D6314A72E92830C3 /* LTMorphingLabel.h in Headers */,
+				52A6FE0F1BD4FDA76D4AD445DD324EFD /* Pods-PortraitToReality-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EB8B85D55C2701FAC2DD8C84B5C99DC /* Headers */ = {
+		59F0C530AC6A69FEAA355175ECD7868F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6C585E59F8A2C8C24DE47C2254BAE7 /* Pods-PortraitToRealityTests-umbrella.h in Headers */,
+				C3459CE11CCFB813281DA209E4B1AE1C /* Pods-PortraitToRealityTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B5F19311E24E261E5FC2D305534C87 /* Headers */ = {
+		5BF8C649B48EC1804AAEE6EDC81CDBAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16245FC47744FAEDD0AD02B0BABAB08 /* Pods-PortraitToReality-umbrella.h in Headers */,
+				E99149D5F39340E4D3B16F0EF68A30A1 /* LTMorphingLabel-umbrella.h in Headers */,
+				EEFBF83E1E8F59C680CF96D3C32B4F31 /* LTMorphingLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDEB22AE21575396DE1F1F5FC70945C3 /* Headers */ = {
+		A96B281BC44F74909A704207B218EF21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80F072960BBB98D5C1C0A355DF23CC4 /* ARVideoKit-umbrella.h in Headers */,
-				8053DBF940CDB20ECE5B27EA790B0CF0 /* ARVideoKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA28500648F51FAFCD571443B1405DF2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				475A89032A8763D8E2ADD6B21783FA68 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */,
+				838368B56A03B3F57E2CBC0613673869 /* Pods-PortraitToRealityUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D60FE586D4FEE5BABE97B806797491C /* Pods-PortraitToReality */ = {
+		5E9115DEB83626D816B704537264BBDF /* Pods-PortraitToRealityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 252409911AD9443DD2E988FFD3381337 /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */;
+			buildConfigurationList = 110417C142C41BB88A102E790AD6C17E /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */;
 			buildPhases = (
-				84B5F19311E24E261E5FC2D305534C87 /* Headers */,
-				30CCFE3E21D90B7FF1FAB2F1CC98C86C /* Sources */,
-				752A58C0307D2D4502DF5687436EB1E9 /* Frameworks */,
-				921A591B1FEEF1AECA6C43C5587E3C08 /* Resources */,
+				59F0C530AC6A69FEAA355175ECD7868F /* Headers */,
+				20E051E86BD82197DE77B00B27FD2A7C /* Sources */,
+				47C063308C50B0230EDE5B7E289BD464 /* Frameworks */,
+				DE5EC99939F6A310EC612C65444A8320 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7FAA0515D76658F1EAE448470A344A6 /* PBXTargetDependency */,
-				CAA85B6E6893D67CAAA7F1D1424E55DD /* PBXTargetDependency */,
+				49ED4521D3FFAE5ED15185AF6B615A7E /* PBXTargetDependency */,
+			);
+			name = "Pods-PortraitToRealityTests";
+			productName = "Pods-PortraitToRealityTests";
+			productReference = 7FFB60B7951BDAC9EB8AC7795819D675 /* Pods_PortraitToRealityTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7876D46FD39C3A1F4C0F457125635F7F /* Pods-PortraitToReality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F62A38317EAD0B27A6D78C793A55AB /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */;
+			buildPhases = (
+				2DED18B40219953CACBB91BD6782270A /* Headers */,
+				2C5B62E0337A726DC20E5EB1026F646E /* Sources */,
+				2EC582D39344DF47D9B3AB4319DB5B3F /* Frameworks */,
+				A86D76A82AF3F20C75C4A2F307E74508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97025597CA4E2D62C9FC0BEDB65BFA14 /* PBXTargetDependency */,
 			);
 			name = "Pods-PortraitToReality";
 			productName = "Pods-PortraitToReality";
-			productReference = AA4F0F3A013F43607FC1CECB0E220A13 /* Pods_PortraitToReality.framework */;
+			productReference = 3C2C1D776727F6AA48754D315EFA2A53 /* Pods_PortraitToReality.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A4E03F59A32541EDF246A95FF103B354 /* Pods-PortraitToRealityUITests */ = {
+		BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5233E00DD20BD8F94ED91182C876E417 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */;
+			buildConfigurationList = DDDCAB1EAB97F2E12AB1162F2E24450B /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */;
 			buildPhases = (
-				DA28500648F51FAFCD571443B1405DF2 /* Headers */,
-				13D4F4F4DEE256A9FA5A4CDC7D289775 /* Sources */,
-				F8A13B2918D0DAE4FF8DB2BF290D5E44 /* Frameworks */,
-				1F78D26151504DE5F01AB62E6E4AF7A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D295881646784E81634838AC25BB51DE /* PBXTargetDependency */,
-			);
-			name = "Pods-PortraitToRealityUITests";
-			productName = "Pods-PortraitToRealityUITests";
-			productReference = BF3D4ABF671333A2A78FA14F852F2BB9 /* Pods_PortraitToRealityUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9193356F7B895A7E30E7263ED7C0706A /* Build configuration list for PBXNativeTarget "ARVideoKit" */;
-			buildPhases = (
-				CDEB22AE21575396DE1F1F5FC70945C3 /* Headers */,
-				24DBDD883122A641EDC82A7F99A3561C /* Sources */,
-				081283A743AE753883BB94D1062C3DE8 /* Frameworks */,
-				40E28F5DE092C86D161D67D87CAB136F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ARVideoKit;
-			productName = ARVideoKit;
-			productReference = 980C641DBD31223566994945FF8E2A22 /* ARVideoKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E9D0F27BDB1B412F397EC2EF4645CB03 /* LTMorphingLabel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0010EFB0F1732C9E4EB7379AD2275996 /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */;
-			buildPhases = (
-				18C0660E5686EEB0BFE8EE16F5126EA5 /* Headers */,
-				5BD8074EA7FDDCB9E2BB303286932D5D /* Sources */,
-				926B280046574D3401421E3BACE69D09 /* Frameworks */,
-				1313F833E3EF0AB3F7D24A5A9534EAB9 /* Resources */,
+				5BF8C649B48EC1804AAEE6EDC81CDBAC /* Headers */,
+				0F9B87A93034173530907DE52803020B /* Sources */,
+				580B1A27F7E1401C9D8294461B757383 /* Frameworks */,
+				8697EB94719E84C7D614B72886B71E49 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -558,26 +411,26 @@
 			);
 			name = LTMorphingLabel;
 			productName = LTMorphingLabel;
-			productReference = 674BEEDD186AE3FBBA252FAD93DA4DAD /* LTMorphingLabel.framework */;
+			productReference = 1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EEF272E92878E71D64A4B4CB77F007CA /* Pods-PortraitToRealityTests */ = {
+		C65E398450F85650BF584A8138D5610E /* Pods-PortraitToRealityUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A93A962E0958C405D9B268FB0291B37 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */;
+			buildConfigurationList = B2E975B077146D30F4D07DA4ED246314 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */;
 			buildPhases = (
-				6EB8B85D55C2701FAC2DD8C84B5C99DC /* Headers */,
-				4CA61ABFDE7EEB95AB20E3FA7076259A /* Sources */,
-				D5E9BC98FDDB7538D58789FF76952B72 /* Frameworks */,
-				3142511B75AD83E2F251E526C5522737 /* Resources */,
+				A96B281BC44F74909A704207B218EF21 /* Headers */,
+				E8D19E3A4584D2CA83A030813507A49D /* Sources */,
+				3113549ACB11C630509D19B9E9555E1D /* Frameworks */,
+				40187980D3A2E376CA73544373B1E606 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				91B55A258D46ADA6FFC3B2AA3E678C28 /* PBXTargetDependency */,
+				4A9657EE89B38EABE9EFC49349DA4E1F /* PBXTargetDependency */,
 			);
-			name = "Pods-PortraitToRealityTests";
-			productName = "Pods-PortraitToRealityTests";
-			productReference = A57B445DD3C09A2B5DAE5EB20BDFA45D /* Pods_PortraitToRealityTests.framework */;
+			name = "Pods-PortraitToRealityUITests";
+			productName = "Pods-PortraitToRealityUITests";
+			productReference = D613778DE2DC7BE5548134FD7AADB62F /* Pods_PortraitToRealityUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -586,66 +439,57 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 407E58AD5D5FA7DA8F603E8753FF72F0 /* Products */;
+			productRefGroup = 8CEB34ABE4FE2335040131400BCE7A31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */,
-				E9D0F27BDB1B412F397EC2EF4645CB03 /* LTMorphingLabel */,
-				2D60FE586D4FEE5BABE97B806797491C /* Pods-PortraitToReality */,
-				EEF272E92878E71D64A4B4CB77F007CA /* Pods-PortraitToRealityTests */,
-				A4E03F59A32541EDF246A95FF103B354 /* Pods-PortraitToRealityUITests */,
+				BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */,
+				7876D46FD39C3A1F4C0F457125635F7F /* Pods-PortraitToReality */,
+				5E9115DEB83626D816B704537264BBDF /* Pods-PortraitToRealityTests */,
+				C65E398450F85650BF584A8138D5610E /* Pods-PortraitToRealityUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1313F833E3EF0AB3F7D24A5A9534EAB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A2563B4F87FA6D911A01392BF4EE131 /* Fire.png in Resources */,
-				80417950C455A1223A265666753CDF59 /* Fragment.png in Resources */,
-				C84AC833FDDFF634687537B187F2C982 /* Smoke.png in Resources */,
-				C704B8A04C0D7F17E8201D3642C607C5 /* Sparkle.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F78D26151504DE5F01AB62E6E4AF7A6 /* Resources */ = {
+		40187980D3A2E376CA73544373B1E606 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3142511B75AD83E2F251E526C5522737 /* Resources */ = {
+		8697EB94719E84C7D614B72886B71E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08AD5F102DBC800719CB340FB22B7F1 /* Fire.png in Resources */,
+				AAF92F7ED3197B5AF7647AA739753683 /* Fragment.png in Resources */,
+				FC834C03536DDFF1ADAE5F8ADDE33A81 /* Smoke.png in Resources */,
+				6637B1DAF6D424D039F2DB3CE741D2F3 /* Sparkle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86D76A82AF3F20C75C4A2F307E74508 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40E28F5DE092C86D161D67D87CAB136F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DA05F589ABA8F00784B246332BF2B16 /* video.scnassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921A591B1FEEF1AECA6C43C5587E3C08 /* Resources */ = {
+		DE5EC99939F6A310EC612C65444A8320 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -655,245 +499,78 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		13D4F4F4DEE256A9FA5A4CDC7D289775 /* Sources */ = {
+		0F9B87A93034173530907DE52803020B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D38B14C91D9E1C3D15648C38EBDD55E /* Pods-PortraitToRealityUITests-dummy.m in Sources */,
+				B351A6FBFE08F5C15FD5F9D853250CFD /* LTCharacterDiffResult.swift in Sources */,
+				E332A090BABBFD027DBF3C1DAE99FDE8 /* LTCharacterLimbo.swift in Sources */,
+				B51825EC515B623CA44A1E3D3C61188B /* LTEasing.swift in Sources */,
+				0F827AC7BD2A5CDA1B683D52DC6D9CCF /* LTEmitterView.swift in Sources */,
+				58785A307922D8513DD099B8B1E3803C /* LTMorphingEffect.swift in Sources */,
+				86867D8E99691262F784AE24A7D953B6 /* LTMorphingLabel+Anvil.swift in Sources */,
+				B2008DD6915E291532A1CBEBE92039CE /* LTMorphingLabel+Burn.swift in Sources */,
+				D7EC76C888837C2244145DDA750D5313 /* LTMorphingLabel+Evaporate.swift in Sources */,
+				EDBC53BE7010EEF5DD0280629AF12990 /* LTMorphingLabel+Fall.swift in Sources */,
+				CB59B5B8F6AFA347A7B09771B5244A36 /* LTMorphingLabel+Pixelate.swift in Sources */,
+				B70823D221A44099F34E737C07B235E8 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				41383A54AC4C15B59C98C6EAD6AE54BF /* LTMorphingLabel-dummy.m in Sources */,
+				34F3BF2072270851B72843768EBECB59 /* LTMorphingLabel.swift in Sources */,
+				FEA6E7FADADB27B9004A3BA86FC20EC8 /* LTStringDiffResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24DBDD883122A641EDC82A7F99A3561C /* Sources */ = {
+		20E051E86BD82197DE77B00B27FD2A7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF5A5A25CE83FAD83DD3E4624889DE11 /* ARInputViewOptions.swift in Sources */,
-				7BB36648630833A6D3384593CC4459C9 /* ARVideoKit-dummy.m in Sources */,
-				712E7B0D1B22788AE10FD2512DD570B3 /* ARVideoOptions.swift in Sources */,
-				ADA094D3BFDF8E0A57AD854D27AEE3A0 /* ARView.swift in Sources */,
-				0707B973477D81DA276897662379C446 /* CGImage+Resize.swift in Sources */,
-				75BB033DA0BC5A8ADB50FE4C8C0E716A /* Generate+GIF.swift in Sources */,
-				7466B4802D68962D1F967A669527D1EF /* Generate+LivePhoto.swift in Sources */,
-				13D7A04A3A45B18AAC1011D1A8DA3624 /* JPEG.swift in Sources */,
-				FC9CE20B1EE47E89D7EB1BE2643B3A56 /* PHLivePhotoPlus.swift in Sources */,
-				93F17B9BFC168DAA500021F40C4BE08C /* QuickTimeMov.swift in Sources */,
-				72EF598593CDF29452D8B32714908CE9 /* RecordAR+PhotoRender.swift in Sources */,
-				E4F2B0C269DDDFB304CE3E53BA7E26FA /* RecordAR.swift in Sources */,
-				1313196D3B56D75EDCAD457C9C2B3997 /* RecordARDelegate.swift in Sources */,
-				1034F0E5E903C929EE48F01228B3612D /* RenderAR.swift in Sources */,
-				64CAD969F31ABF18EF54B79E660646F2 /* RenderARDelegate.swift in Sources */,
-				D9F31D313E39AD03850BA27FF69DE2B2 /* UIImage+VideoBuffer.swift in Sources */,
-				ADFD6E3854DA0C5738074605AE6D99E7 /* UIView+isType.swift in Sources */,
-				D4603C35CBA5036FBD4E08AAEDAC2BC4 /* UIViewController+hasType.swift in Sources */,
-				8158400300FB97D3C606B2C195538F8D /* ViewAR.swift in Sources */,
-				E029E86F9A49C498BB987E57149EA774 /* WritAR.swift in Sources */,
+				A4C7AD5D5D0A9408D55B98A7CEB287DA /* Pods-PortraitToRealityTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30CCFE3E21D90B7FF1FAB2F1CC98C86C /* Sources */ = {
+		2C5B62E0337A726DC20E5EB1026F646E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D396368F851E5E4F829387FF531466A2 /* Pods-PortraitToReality-dummy.m in Sources */,
+				0FF0557E3E234A55BB3046068677E0AD /* Pods-PortraitToReality-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CA61ABFDE7EEB95AB20E3FA7076259A /* Sources */ = {
+		E8D19E3A4584D2CA83A030813507A49D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB658B6D9490E0FDDC04E0327064A83 /* Pods-PortraitToRealityTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD8074EA7FDDCB9E2BB303286932D5D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				711FD0F9FAF4A7B1A7D6A39D3893155E /* LTCharacterDiffResult.swift in Sources */,
-				83947E623EC334F386C8CD9865AE8899 /* LTCharacterLimbo.swift in Sources */,
-				AFB4C9CFBE0340B5B8477F836DBBB8AD /* LTEasing.swift in Sources */,
-				692BCE8722FF3278A04282F6216FFDE9 /* LTEmitterView.swift in Sources */,
-				9092585C5596078DB4841E639C4A0C00 /* LTMorphingEffect.swift in Sources */,
-				B6083B1709A63279F409CC9C3028DD44 /* LTMorphingLabel+Anvil.swift in Sources */,
-				40FAC3034E582A7D9E5148E5D8B9A629 /* LTMorphingLabel+Burn.swift in Sources */,
-				C878F1359E49BD397D9190AB1EC03749 /* LTMorphingLabel+Evaporate.swift in Sources */,
-				61861FCE2BEC0E780CA4014A6C49156D /* LTMorphingLabel+Fall.swift in Sources */,
-				16B6BD3E99E0486726A0960F56F5A35C /* LTMorphingLabel+Pixelate.swift in Sources */,
-				1D5969D6C67AEEC04C619CFD0E385DE0 /* LTMorphingLabel+Sparkle.swift in Sources */,
-				B26670D4288F3BAEAEBA4DCA494B8011 /* LTMorphingLabel-dummy.m in Sources */,
-				D98C6722D6F5A08554ECD3F1F032DA98 /* LTMorphingLabel.swift in Sources */,
-				694F0C19CDF6D8C91A2A279310CF223C /* LTStringDiffResult.swift in Sources */,
+				61DDCE55C993047883CBC85B16F22B96 /* Pods-PortraitToRealityUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		91B55A258D46ADA6FFC3B2AA3E678C28 /* PBXTargetDependency */ = {
+		49ED4521D3FFAE5ED15185AF6B615A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PortraitToReality";
-			target = 2D60FE586D4FEE5BABE97B806797491C /* Pods-PortraitToReality */;
-			targetProxy = D47ABABB71F9536333C59E1491CD4FF7 /* PBXContainerItemProxy */;
+			target = 7876D46FD39C3A1F4C0F457125635F7F /* Pods-PortraitToReality */;
+			targetProxy = 2A0502A2B82A713851F6575342F9D38E /* PBXContainerItemProxy */;
 		};
-		CAA85B6E6893D67CAAA7F1D1424E55DD /* PBXTargetDependency */ = {
+		4A9657EE89B38EABE9EFC49349DA4E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PortraitToReality";
+			target = 7876D46FD39C3A1F4C0F457125635F7F /* Pods-PortraitToReality */;
+			targetProxy = 53314BD6319E6C62104394BCAB5A2351 /* PBXContainerItemProxy */;
+		};
+		97025597CA4E2D62C9FC0BEDB65BFA14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LTMorphingLabel;
-			target = E9D0F27BDB1B412F397EC2EF4645CB03 /* LTMorphingLabel */;
-			targetProxy = DA7C875DD7ECF79BC0A0C1FC4984E0C7 /* PBXContainerItemProxy */;
-		};
-		D295881646784E81634838AC25BB51DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PortraitToReality";
-			target = 2D60FE586D4FEE5BABE97B806797491C /* Pods-PortraitToReality */;
-			targetProxy = 9F06FA22DD013972FD0EFB4A520A4173 /* PBXContainerItemProxy */;
-		};
-		F7FAA0515D76658F1EAE448470A344A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ARVideoKit;
-			target = D73C00F957192790EB7CA81FC84A3F26 /* ARVideoKit */;
-			targetProxy = 36F5B97FF36855A1698A0CC30C2C302F /* PBXContainerItemProxy */;
+			target = BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */;
+			targetProxy = 45878073FBE19A3414B2AE4EBE397DFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AD7A1F42B1EE925B9E9605A320856F3 /* Debug */ = {
+		1BC7B2349ACB4263F990234EA6B812CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37B78B35B23CB5A850BA50F705E2A56C /* ARVideoKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
-				PRODUCT_MODULE_NAME = ARVideoKit;
-				PRODUCT_NAME = ARVideoKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1C087E0B1362B76608002072906A10E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F0D9BF3E97704B59F16F4AD860D0C4C /* Pods-PortraitToRealityTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1ECA52AF76CDA62636BAA32225435424 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37B78B35B23CB5A850BA50F705E2A56C /* ARVideoKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
-				PRODUCT_MODULE_NAME = ARVideoKit;
-				PRODUCT_NAME = ARVideoKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1F29545AE0269A5978A45C9DAE76891B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6C76C04955ADFF8A4DE541134DAC20F /* Pods-PortraitToReality.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		37E22B213360CBAA114726143A25D8CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7924A272D6DB98BA78C13D3F7637D13 /* LTMorphingLabel.xcconfig */;
+			baseConfigurationReference = 74016D8F0E0502E143C85839870BDF79 /* LTMorphingLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -908,250 +585,25 @@
 				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
-				PRODUCT_MODULE_NAME = LTMorphingLabel;
-				PRODUCT_NAME = LTMorphingLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		57AE9B962C61311AEA218238A7C68CFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7924A272D6DB98BA78C13D3F7637D13 /* LTMorphingLabel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
-				PRODUCT_MODULE_NAME = LTMorphingLabel;
-				PRODUCT_NAME = LTMorphingLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5A9F105AE21C156DC54C0F01974817E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71C386B0D533FA8F136E53F6FAD0BAEF /* Pods-PortraitToRealityTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6BB90FB3DDF8C8099CEEC8CE5256C107 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 088E255A2FF7FC13032A4B208CDC2966 /* Pods-PortraitToRealityUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A8977D6C02C2596438D691188EC044CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55CC8BBE26352998F02E8D0682D4AEFA /* Pods-PortraitToRealityUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				PRODUCT_MODULE_NAME = LTMorphingLabel;
+				PRODUCT_NAME = LTMorphingLabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BB60E58AB15F0B226B384A749F813511 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EAAD705F25C67A939C72248F48DA5D0 /* Pods-PortraitToReality.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1210,28 +662,346 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		325B4A1992DBA55F32F4DCCFB6218EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FC8BE5E6055F5D91AAD0D354AA30B4 /* Pods-PortraitToRealityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		358D9EA2138EAF7D7953E3FD1C01E5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D410B0C2EAFED69339A82CFD0595D1 /* Pods-PortraitToRealityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3E42B2831BDA49ADA8BD54D6B0849E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41559C53EC60A6617B7F89BFCC551F3F /* Pods-PortraitToReality.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FCC0924FC67C86F32B75DCEB7844AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6022896616A79C678A8C7D08C8BC7DD1 /* Pods-PortraitToReality.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToReality/Pods-PortraitToReality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C41B97C14DE6BFB27F7825801C1CB143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E8F18A895853BED2A3A93B5E3F0D8C /* Pods-PortraitToRealityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityTests/Pods-PortraitToRealityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5E9E6D052AEA6659DE93933F7386F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74016D8F0E0502E143C85839870BDF79 /* LTMorphingLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				PRODUCT_MODULE_NAME = LTMorphingLabel;
+				PRODUCT_NAME = LTMorphingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6D75D3B60E3DCE1DCAD89BA2DD446E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB92F3C647C88305213FAC6880E738A /* Pods-PortraitToRealityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PortraitToRealityUITests/Pods-PortraitToRealityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0010EFB0F1732C9E4EB7379AD2275996 /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */ = {
+		110417C142C41BB88A102E790AD6C17E /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57AE9B962C61311AEA218238A7C68CFD /* Debug */,
-				37E22B213360CBAA114726143A25D8CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		252409911AD9443DD2E988FFD3381337 /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB60E58AB15F0B226B384A749F813511 /* Debug */,
-				1F29545AE0269A5978A45C9DAE76891B /* Release */,
+				C41B97C14DE6BFB27F7825801C1CB143 /* Debug */,
+				325B4A1992DBA55F32F4DCCFB6218EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1239,35 +1009,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
-				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5233E00DD20BD8F94ED91182C876E417 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */ = {
+		55F62A38317EAD0B27A6D78C793A55AB /* Build configuration list for PBXNativeTarget "Pods-PortraitToReality" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8977D6C02C2596438D691188EC044CD /* Debug */,
-				6BB90FB3DDF8C8099CEEC8CE5256C107 /* Release */,
+				6FCC0924FC67C86F32B75DCEB7844AEC /* Debug */,
+				3E42B2831BDA49ADA8BD54D6B0849E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A93A962E0958C405D9B268FB0291B37 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityTests" */ = {
+		B2E975B077146D30F4D07DA4ED246314 /* Build configuration list for PBXNativeTarget "Pods-PortraitToRealityUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C087E0B1362B76608002072906A10E9 /* Debug */,
-				5A9F105AE21C156DC54C0F01974817E5 /* Release */,
+				D6D75D3B60E3DCE1DCAD89BA2DD446E8 /* Debug */,
+				358D9EA2138EAF7D7953E3FD1C01E5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9193356F7B895A7E30E7263ED7C0706A /* Build configuration list for PBXNativeTarget "ARVideoKit" */ = {
+		DDDCAB1EAB97F2E12AB1162F2E24450B /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD7A1F42B1EE925B9E9605A320856F3 /* Debug */,
-				1ECA52AF76CDA62636BAA32225435424 /* Release */,
+				1BC7B2349ACB4263F990234EA6B812CF /* Debug */,
+				C5E9E6D052AEA6659DE93933F7386F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
